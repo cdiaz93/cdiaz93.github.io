@@ -1,0 +1,923 @@
+<html>
+<head>
+
+    <!-- CSS - Bootstrap 5.3.1  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- CSS Personalizado  -->
+    <link rel="stylesheet" href="public/css/index.css">
+
+    <style>
+        /* Estilo personalizado para la animación */
+        .fade-in {
+          animation: fadeIn 0.5s ease-in-out forwards;
+        }
+      
+        .fade-out {
+          animation: fadeOut 0.5s ease-in-out forwards;
+        }
+      
+        @keyframes fadeIn {
+          from { opacity: 0; }
+          to { opacity: 1; }
+        }
+      
+        @keyframes fadeOut {
+          from { opacity: 1; }
+          to { opacity: 0; }
+        }
+      </style>
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.1123.0" data-gr-ext-installed="">
+
+
+    <!-- <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">Sobre mi</h4>
+                        <p class="text-white">
+                            ¡Hola! Soy Carlos David Diaz, un apasionado diseñador web con experiencia en la creación de experiencias digitales atractivas y funcionales.
+                        </p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contacto</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Seguir en Twitter</a></li>
+                            <li><a href="#" class="text-white">Like en Facebook</a></li>
+                            <li><a href="#" class="text-white">Envíame un Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
+                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+                        <circle cx="12" cy="13" r="4"></circle>
+                    </svg>
+                    <strong>Album</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header> -->
+
+
+    <main>
+        <section class="py-5 text-center container">
+            <div class="row py-lg-5">
+                <div class="col-lg-8 col-md-8 mx-auto">
+                    <h1 class="fw-light"> Portafolio de trabajos </h1>
+                    <p class="lead text-muted mt-3 text-justify">
+                        ¡Hola! Soy Carlos David Diaz, un apasionado diseñador web con experiencia en la creación de interfaces digitales atractivas y funcionales.
+                        A lo largo de mi carrera, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole. <br>
+                        Tambien, he demostrado mis habilidades en la creación de macros en Excel usando VBA, para la automatización de procesos. 
+                        <br><br>
+                        Te invito a explorar mi portafolio, donde encontrarás ejemplos de trabajos en los que he participado. <br>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        
+
+        <div class="album py-5 bg-light">
+            <div class="container">
+
+                <div class="row pb-5">
+                    <div class="col text-center">
+                      <button class="btn btn-outline-secondary" onclick="mostrarDiv('diseno')">Diseño</button>
+                      <button class="btn btn-outline-secondary" onclick="mostrarDiv('programacion')">Programación</button>
+                      <button type="button" class="btn btn-outline-dark mr-md-3 mb-2 mb-md-0">Dark</button>
+                    </div>
+                </div>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+                    <!-- SECCION #1  -->
+                    <div class="col" id="diseno"> 
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-1" href="#">
+                                <img class="img-fluid" src="./public/images/banners/Spa_Akemi.png" alt="spa_akemi_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Spa Akemi </h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #2  -->
+                    <div class="col" id="diseno">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-2" href="#">
+                                <img class="img-fluid" src="./public/images/banners/capibox.png" alt="capibox_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Capibox  </h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #3  -->
+                    <div class="col" id="diseno">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-3" href="#">
+                                <img class="img-fluid" src="./public/images/banners/Chorrreras_Perico.png" alt="chorreras_perico_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Chorreras de Perico </h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #4  -->
+                    <div class="col" id="programacion">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-4" href="#">
+                                <img class="img-fluid" src="./public/images/banners/Imaster_ColombiaTour.png" alt="Imaster_ColombiaTour_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Colombia Tour </h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #5  -->
+                    <div class="col" id="programacion">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-5" href="#">
+                                <img class="img-fluid" src="./public/images/banners/cinema_MERN.png" alt="Cinema_MERN_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Cinema MERN </h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #6  -->
+                    <div class="col" id="programacion">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-6" href="#">
+                                <img class="img-fluid" src="./public/images/banners/Captacion_recetas.png" alt="Recetas_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Captacion de recetas </h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #7  -->
+                    <div class="col" id="programacion">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-7" href="#">
+                                <img class="img-fluid" src="./public/images/banners/Seguridad_TQ.png" alt="Gestion_riesgos__thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Gestión de riesgos e incidentes </h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #8  -->
+                    <div class="col" id="programacion">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-8" href="#">
+                                <img class="img-fluid" src="./public/images/banners/tienda_Laravel.png" alt="Tienda_virtual_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Tienda Laravel </h5> </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- MODAL #1 - SPA AKEMI  -->
+                    <div class="modal fade m-0 p-0" id="modal-1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Spa Akemi </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-html"> HTML </span>
+                                                <span class="badge tag-js"> Javascript </span>
+                                                <span class="badge tag-laravel"> Laravel </span>
+                                                <span class="badge tag-php"> PHP </span>
+                                                <span class="badge tag-mysql"> MySQL </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#page">Pagina Web</a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info">
+                                                        <div class="container mt-5">
+                                                            <p>
+                                                                Pagina web informativa. <br> 
+                                                                Akemi es un Spa que ofrece servicios variados entre tratamientos de SPA, tratamientos corporales, faciales, masajes y vitaminación.
+                                                                <br><br>
+                                                                La pagina tambien cuenta con una pequeña app, para que los clientes puedan desde la pagina realizar la reserva de un servicio y desde 
+                                                                un panel administrativo el dueño pueda consultar estas reservas y obtener los datos del cliente para poder contactarlo y concertar detalles para la cita.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="page">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/EZ1TKqi7zug?si=aaJySUSeHALsRdo6" 
+                                                                    width="560" height="315"  frameborder="0" allowfullscreen
+                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
+                                            <img src="public/images/pagina_competa/spa_akemi_fullscreen.png" class="img-fluid" alt="spa_akemi_fullscreen">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL #2 - CAPIBOX  -->
+                    <div class="modal fade m-0 p-0" id="modal-2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Capibox  </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-html"> HTML </span>
+                                                <span class="badge tag-js"> Javascript </span>
+                                                <span class="badge tag-laravel"> Laravel </span>
+                                                <span class="badge tag-php"> PHP </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-2">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#page-2">Pagina Web</a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-2">
+                                                        <div class="container mt-5">
+                                                            <p>
+                                                                Pagina web informativa. <br>
+                                                                Capibox ofrece servicio de casillero virtual, para que sus clientes puedan realizar compras 
+                                                                online. Tienen casilleros con ubicación fisica en EE.UU para recibir el/los productos, y enviarlos al pais de destino final (Colombia).
+                                                                <br> <br>
+                                                                La pagina es multi-idioma y puede ser visualizada en español o ingles.
+                                                                La pagina usa PHP para el envio de correos, La sección de Contáctenos cuenta con un formulario para que las personas que visitan la pagina 
+                                                                puedan enviar sus inquietudes.
+                                                             </br>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="page-2">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/sL1gyM-hW4A?si=NtvsFNyt9gITRs-J&rel=0" 
+                                                                    width="560" height="315"  frameborder="0" allowfullscreen
+                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
+                                            <img src="public/images/pagina_competa/capibox_fullscreen.png" class="img-fluid" alt="capibox_fullscreen">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL #3 - CHORRERAS PERICO  -->
+                    <div class="modal fade m-0 p-0" id="modal-3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Chorreras de Perico  </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-html"> HTML </span>
+                                                <span class="badge tag-js"> Javascript </span>
+                                                <span class="badge tag-laravel"> Laravel </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-3">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#page-3">Pagina Web</a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-3">
+                                                        <div class="container mt-4">
+                                                            <p>
+                                                                Pagina web informativa. <br>
+                                                                Chorreras de perico es un centro de recreación que ofrece servicios de hospedaje, restaurante y alquiler 
+                                                                de espacios para la celebración de eventos especiales.
+                                                                <br> <br>
+                                                                La pagina original (Versión 1) fue desarrollada en 2018. El trabajo que realice (Año 2023) consistio en hacer algunas modificaciones de diseño a la pagina, 
+                                                                ademas se agrego nueva información.
+                                                                <br><br>
+                                                                El trabajo fue realizado para la empresa <a class="text-decoration-none" href="http://sagazsas.com/" target="_blank">Sagaz sas</a>, y los 
+                                                                derechos de autor le corresponden a dicha empresa.
+                                                             </br>
+                                                            </p>
+
+                                                            <div class="col-md-12 mt-4">
+                                                                <div class="py-3">Estas viendo: <b class="version-text"> Versión modificada </b></div>
+                                                                <button type="button" class="btn btn-outline-primary d-inline" onclick="cambiarVersion(1)"> Versión original </button>
+                                                                <button type="button" class="btn btn-outline-primary d-inline" onclick="cambiarVersion(2)"> Versión modificada</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="page-3">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/d9tUjUUqE8A?si=F5B40-VcvqvXdB3U" 
+                                                                    width="560" height="315"  frameborder="0" allowfullscreen
+                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
+                                            <div class="fixed-label text-center">
+                                            <div class="fixed-label-bg p-1 px-4">
+                                                <h6 class="text-white version-text"> Versión modificada </h6>
+                                            </div>
+                                        </div>
+                                            <img id="version-img" src="public/images/pagina_competa/chorrerasV2_fullscrren.png" class="img-fluid" alt="chorreras_perico_fullscreen">
+                                        </div>
+                                        
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL #4 - COLOMBIATOUR   -->
+                    <div class="modal fade m-0 p-0" id="modal-4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Imaster - Colombia Tour </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-mongo"> MongoDB </span>
+                                                <span class="badge tag-express"> Express </span>
+                                                <span class="badge tag-vue"> VueJS  </span>
+                                                <span class="badge tag-node"> NodeJS </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-4">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#app-4">App web</a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-4">
+                                                        <div class="container mt-4">
+                                                            <p>
+                                                                Aplicativo web desarrollado con el stack MEVN.
+                                                                Se desarrollo en un grupo conformado por 2 personas, como el proyecto final para uno de los cursos (Desarrollo Stack MEVN) perteneciente 
+                                                                al programa de formación virtual <b> MISION TIC 2021</b>. <br>
+                                                                Consiste en una pagina de venta de paquetes turisticos. 
+                                                                Tambien cuenta con un Dashboard desde el cual el administrador puede crear los paquetes que se mostraran en la pagina, como gestion de usuarios 
+                                                                que se registran para adquirir paquetes turisticos.
+
+                                                            </p>
+                                                            <h5 class="font-weight-bold text-decoration-underline mt-1"> Roles </h5>
+                                                            <b> Cliente: </b> 
+                                                            <ul class="ul-2">
+                                                                
+                                                                <li> Consultar paq. turisticos en general.</li>
+                                                                <li> Consultar paq. turisticos adquiridos.</li>
+                                                                <li> Registrarse en la pagina.</li>
+                                                                <li> Reservar paq. turisticos.</li>
+                                                            </ul> 
+                                                                
+                                                            <b> Administrador:</b>
+                                                            <ul class="ul-2">
+                                                                <li>  Gestión de usuarios. </li>
+                                                                <li>  Gestión de paquetes turisticos. </li>
+                                                            </ul>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="app-4">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/BLGs0_rWxGo?si=z_GkTPh7yKvfxtgk" 
+                                                                    width="560" height="315"  frameborder="0" allowfullscreen
+                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
+                                            <img src="public/images/pagina_competa/app_colombiatours/colombiaTour_page1.png" class="img-fluid" alt="spa_akemi_fullscreen">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL #5 - CINEMA MERN   -->
+                    <div class="modal fade m-0 p-0" id="modal-5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Cinema MERN </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-mongo"> MongoDB </span>
+                                                <span class="badge tag-express"> Express </span>
+                                                <span class="badge tag-react"> React  </span>
+                                                <span class="badge tag-node"> NodeJS </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-5">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#app-5">App web</a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-5">
+                                                        <div class="container mt-4">
+                                                            <p>
+                                                                Aplicativo web desarrollado con el stack MERN. 
+                                                                Es un proyecto que desarrollé para aplicar los conocimientos adquiridos sobre el stack en
+                                                                el programa de formación virtual <b> MISION TIC 2021</b>.
+                                                                Consiste en una pagina de reservas en cine:
+                                                                <br><br>
+                                                                <b>1. Pagina web: </b> Donde se pueden ver los detalles de las peliculas ofrecidas para cartelera.
+                                                                La pagina tambien cuenta con una sección donde se pueden hacer las reservas. para el metodo de pago se 
+                                                                utilizo la API de Paypal.
+                                                                <br><br>
+                                                                <b>2. Dashboard:</b> 
+                                                                Desde esta sección se puede gestionar toda la funcionalidad de la pagina web, tanto de peliculas como las reservas.
+                                                            </p>
+                                                            <h5 class="font-weight-bold text-decoration-underline mt-1"> Roles </h5>
+                                                            <b> Cliente: </b> 
+                                                            <ul class="ul-2">
+                                                                <li> Consultar peliculas en cartelera.</li>
+                                                                <li> Hacer reserva para una pelicula.</li>
+                                                            </ul> 
+                                                                
+                                                            <b> Administrador:</b>
+                                                            <ul class="ul-2">
+                                                                <li>  Gestión de peliculas. </li>
+                                                                <li>  Gestión de salas de cine. </li>
+                                                                <li>  Gestión de horarios de función. </li>
+                                                                <li>  Consultar reservas de clientes. </li>
+                                                            </ul>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tab-pane container fade" id="app-5">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/xwqoBZtnr_I?si=yW-1L0JpcFfUrspX" 
+                                                                    width="560" height="315"  frameborder="0" allowfullscreen
+                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
+                                            <img src="public/images/pagina_competa/cinema_MERN.png" class="img-fluid" alt="spa_akemi_fullscreen">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- MODAL #6 - CAPTACION DE RECETAS  -->
+                    <div class="modal fade m-0 p-0" id="modal-6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Sistema de captación de recetas  </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-html"> HTML </span>
+                                                <span class="badge tag-js"> Javascript </span>
+                                                <span class="badge tag-laravel"> Laravel </span>
+                                                <span class="badge tag-php"> PHP </span>
+                                                <span class="badge tag-mysql"> MySQL </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-6">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#app-6">App web</a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-6">
+                                                        <div class="container mt-4">
+                                                            <p>
+                                                                Consiste en un sistema para almacenar información de prescripciones medicas, con el fin de poder disponer de esta
+                                                                para análisis y/o generación de informes. <br>
+                                                                Un representante medico es el encargado de registar esta información, la cual tiene prescrita productos de la compañía a la que pertenece.
+                                                            </p>
+                                                            
+                                                            <h5 class="mb-1">  <b><u>Roles:</u></b> </h5>
+                                                            <b> Usuario (representante medico):</b>
+                                                            <ul>
+                                                                <li>  Registrar información de prescripciones medica junto con su soporte.  </li>
+                                                                <li>  Registrar nuevos medicos / Farmacias </li>
+                                                            </ul>
+                                                            <b> Administrador:</b>
+                                                            <ul>
+                                                                <li>  Consultar resgistros de prescripciones medicas.  </li>
+                                                                <li>  Descargar informacion de prescripciones medicas (Excel). </li>
+                                                                <li>  Descargar soportes de prescripciones medicas (Imagenes).  </li>
+                                                            </ul>
+                                                            <br>
+                                                            El trabajo fue realizado para la empresa <a class="text-decoration-none" href="http://sagazsas.com/" target="_blank">Sagaz sas</a>, y los 
+                                                            derechos de autor le corresponden a dicha empresa.
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="app-6">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/BOOc32lH1_A?si=XrGm88IkvHxFuo5u" 
+                                                                    width="560" height="315"  frameborder="0" allowfullscreen
+                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
+                                            <img src="public/images/pagina_competa/captacion_recetas_fullscreen.png" class="img-fluid" alt="spa_akemi_fullscreen">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- MODAL #7 - GESTION DE RIESGOS E INCIDENTES DE TERCEROS  -->
+                    <div class="modal fade m-0 p-0" id="modal-7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Gestión de riesgos e incidentes  </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-html"> HTML </span>
+                                                <span class="badge tag-js"> Javascript </span>
+                                                <span class="badge tag-laravel"> Laravel </span>
+                                                <span class="badge tag-php"> PHP </span>
+                                                <span class="badge tag-mysql"> MySQL </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-7">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#app-7">App web</a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-7">
+                                                        <div class="container mt-4">
+                                                            <p>
+                                                                La plataforma fue diseñada para gestionar los riesgos y incidentes de seguridad relacionados con terceros en el entorno empresarial. <br><br>
+                                                                <b> Riesgos:</b>  Facilita la creación de informes detallados que abarcan tanto los riesgos identificados como aquellos que se han materializado y demandan una acción inmediata. 
+                                                                Esta funcionalidad tiene como objetivo informar a las partes interesadas pertinentes y facilitar la implementación de las medidas 
+                                                                necesarias para abordar y mitigar la situación. <br><br>
+
+                                                                <b>Incidentes:</b> Ofrece la capacidad de gestionar los incidentes de seguridad originados por terceros dentro del entorno empresarial. 
+                                                                Tambien facilita la notificación a los superiores de los colaboradores externos respecto a cualquier incidente detectado.
+                                                                <br>
+                                                            </p>
+                                                            <!-- <hr> -->
+                                                            
+
+                                                            <h5 class="mt-1"> <b> <u>Roles:</u>  </b> </h5>
+                                                            <b> Guarda: </b> 
+                                                            <ul>
+                                                                <li> Generar/Editar analisis de un riesgo ocurrido dentro de la empresa.</li>
+                                                            </ul> 
+                                                               
+                                                            <b> Administrador:</b>
+                                                            <ul>
+                                                                <li>  Consultar/Validar riesgos generados por un guarda y los notifica a las partes interesadas.  </li>
+                                                                <li>  Genera informes y notificaciones de incidentes ocasionados por terceros. </li>
+                                                                <li>  Generar informes graficos con la información de riesgos e incidentes. </li>
+                                                            </ul>
+                                                            <hr>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="app-7">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/Ot4m9RdLpeI?si=H2uInguh-UnHnG6i" 
+                                                                    width="560" height="315"  frameborder="0" allowfullscreen
+                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image-100  d-flex align-items-center mt-2"> 
+                                            <img src="public/images/pagina_competa/seguridad_fullscreen.png" class="img-fluid" alt="seguridad_fullscreen">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL #8 - TIENDA LARAVEL 10  -->
+                    <div class="modal fade m-0 p-0" id="modal-8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Tienda Laravel 10  </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-html"> HTML </span>
+                                                <span class="badge tag-js"> Javascript </span>
+                                                <span class="badge tag-laravel"> Laravel </span>
+                                                <span class="badge tag-php"> PHP </span>
+                                                <span class="badge tag-mysql"> MySQL </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-8">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#app-8">App web</a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-8">
+                                                        <div class="container mt-4">
+                                                            <p>
+                                                                Es un aplicativo e-commerce basico. Se puede gestionar el funcionamiento de la pagina web mediante un panel administrativo.<br><br>
+                                                                
+                                                            </p>
+                                                            <!-- <hr> -->
+                                                            
+
+                                                            <h5 class="mt-1"> <b> <u>Roles:</u>  </b> </h5>
+                                                            <b> Cliente: </b> 
+                                                            <ul>
+                                                                <li> Consultar articulos ofrecidos para la venta. </li>
+                                                                <li> Armar un carrito de compras. </li>
+                                                                <li> Pagar articulos de un carrito de compras. </li>
+                                                            </ul> 
+                                                               
+                                                            <b> Administrador:</b>
+                                                            <ul>
+                                                                <li>  Gestionar articulos para la pag. web.  </li>
+                                                                <li>  Gestionar categorias. </li>
+                                                                <li>  Gestionar subcategorias. </li>
+                                                                <li>  Gestionar marcas para articulos. </li>
+                                                                <li>  Consultar historial de compras de clientes.</li>                                                            </ul>
+                                                            <hr>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="app-8">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/iS-vu0jXS1E?si=_57GCjNnS5jDRu6z" 
+                                                                    width="560" height="315"  frameborder="0" allowfullscreen
+                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                ></iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
+                                            <img src="public/images/pagina_competa/tienda_laravel_fullscreen.png" class="img-fluid" alt="tienda_laravel_fullscreen">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="text-muted py-5">
+        <div class="container">
+            <p class="float-end mb-1">
+                <a href="#">Volver arriba</a>
+            </p>
+            <p class="mb-1">El álbum de ejemplo es © Bootstrap, ¡pero descárgualo y personalízalo tú mismo!</p>
+            <p class="mb-0">¿Nuevo en Bootstrap? <a href="/">Visita la página de inicio</a> o lee nuestra <a href="/docs/5.1/getting-started/introduction/">guía de introducción</a>.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+    <script>
+        function cambiarVersion(version){
+            var elementos = document.getElementsByClassName("version-text");
+            var imagen = document.getElementById("version-img");
+
+            if (version==1){
+                for (var i = 0; i < elementos.length; i++) {
+                    elementos[i].textContent = "Versión Original";
+                }
+                imagen.src = "public/images/pagina_competa/chorrerasV1_fullscrren.png";
+
+            }else if(version ==2){
+                for (var i = 0; i < elementos.length; i++) {
+                    elementos[i].textContent = "Versión Modificada";
+                }
+                imagen.src = "public/images/pagina_competa/chorrerasV2_fullscrren.png";
+            }
+        }
+
+        function mostrarDiv(divId) {
+            var divs = document.querySelectorAll('.col[id]');
+            divs.forEach(function(div) {
+                if (div.id === divId) {
+                div.classList.remove('fade-out');
+                div.classList.add('fade-in');
+                div.style.display = 'block';
+                } else {
+                div.classList.remove('fade-in');
+                div.classList.add('fade-out');
+                setTimeout(function() {
+                    div.style.display = 'none';
+                }, 500); // 0.5 segundos, debe coincidir con la duración de la animación
+                }
+            });
+        }
+
+    </script>
+
+</body>
+</html>

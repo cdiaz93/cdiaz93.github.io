@@ -1,0 +1,104 @@
+
+
+.modal-fullscreen-image {
+    max-height: 75vh;
+    background: #7f7e7e3b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.modal-fullscreen-image-100 {
+    max-height: 100%;
+    background: #7f7e7e3b;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.fixed-label{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1030;
+}
+
+.fixed-label-bg{
+    background: #1d1c1cd6 !important;
+}
+
+.ul-2 {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.ul-3 {
+    columns: 3;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+.tag-html{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#e54d26;
+}
+
+.tag-js{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#ffcc00;
+}
+
+.tag-laravel{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#ee605d;
+}
+
+.tag-php{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#787cb4;
+}
+
+.tag-mysql{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#08668e;
+}
+
+.tag-mongo{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#55ad47;
+}
+
+.tag-express{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#ffcc00;
+}
+
+.tag-vue{
+    --bs-bg-opacity:1;
+    color:#3a4f63;
+    background-color:#47ba87;
+}
+
+.tag-react{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#09d9ff;
+}
+
+
+.tag-node{
+    --bs-bg-opacity:1;
+    color:white;
+    background-color:#77ae69;
+}
+
+.text-justify{
+    text-align: justify !important;
+}
