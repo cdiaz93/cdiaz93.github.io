@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
 <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSS - Bootstrap 5.3.1  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -7,25 +9,33 @@
     <!-- CSS Personalizado  -->
     <link rel="stylesheet" href="public/css/index.css">
 
+    
+
+    <!-- Fancybox Image JS & CSS  -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+
+
+    <!-- Typed.js  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <!-- <script src="public/js/typed_v2.0.1.js"></script> -->
+    
+    <!-- Bootstrap Icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="https://cdn.jsdelivr.net/gh/coliff/bootstrap-rfs/bootstrap-rfs.css" rel="stylesheet">
+
+   
+    <!-- CSS Animate  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+
     <style>
-        /* Estilo personalizado para la animación */
-        .fade-in {
-          animation: fadeIn 0.5s ease-in-out forwards;
-        }
-      
-        .fade-out {
-          animation: fadeOut 0.5s ease-in-out forwards;
-        }
-      
-        @keyframes fadeIn {
-          from { opacity: 0; }
-          to { opacity: 1; }
-        }
-      
-        @keyframes fadeOut {
-          from { opacity: 1; }
-          to { opacity: 0; }
-        }
+
+        
+        
       </style>
 </head>
 
@@ -71,31 +81,69 @@
 
 
     <main>
-        <section class="py-5 text-center container">
-            <div class="row py-lg-5">
-                <div class="col-lg-8 col-md-8 mx-auto">
-                    <h1 class="fw-light"> Portafolio de trabajos </h1>
-                    <p class="lead text-muted mt-3 text-justify">
-                        ¡Hola! Soy Carlos David Diaz, un apasionado diseñador web con experiencia en la creación de interfaces digitales atractivas y funcionales.
-                        A lo largo de mi carrera, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole. <br>
-                        Tambien, he demostrado mis habilidades en la creación de macros en Excel usando VBA, para la automatización de procesos. 
-                        <br><br>
-                        Te invito a explorar mi portafolio, donde encontrarás ejemplos de trabajos en los que he participado. <br>
-                    </p>
+        <section class="mx-5 my-2 text-center  vh-100">
+
+            <div class="col-12 d-flex justify-content-end">
+                <button id="ver_portafolio" class="btn btn-outline-dark btn-style2"> Quiero ver el portafolio! </button>
+            </div>
+            <div class="row row-cols-md-12 my-4">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center mb-4">
+                    <img class="col-6 col-sm-5 col-md-12 col-lg-12 img-fluid img-thumbnail animate__animated animate__zoomIn" src="./public//images/perfil/foto 3120x4160_Redimensionada.png" alt="foto_perfil">
+                </div>
+                <div id="div-typed-container" class="col-12 col-sm-12 col-md-8 col-lg-9 text-justify">
+                    <span id="typed-container" class="lead text-muted mt-3 col-lg-12"></span>
+                    <span id="typed-container-2" class="lead text-muted mt-3 col-lg-12"></span>
+                    <span id="typed-container-3" class="lead text-muted mt-3 col-lg-12"></span>
+                    <!-- <p class="lead text-muted mt-3 text-justify">
+                        ¡Hola! Soy Carlos David Diaz. <br><br>
+                        Un apasionado diseñador web con experiencia en la creación de interfaces digitales atractivas y funcionales. <br>
+                        A lo largo de mi carrera, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole. <br> <br>
+
+                        Mis habilidades incluyen trabajar con una variedad de tecnologías web, incluyendo HTML, CSS, JavaScript, PHP y los stacks 
+                        MERN (MongoDB, Express.js, React.js, Node.js) y MEVN (MongoDB, Express.js, Vue.js, Node.js). 
+
+                        Además, he demostrado mis habilidades en la creación de macros en Excel usando VBA, para la automatización de procesos. <br><br>
+                        Te invito a explorar mi portafolio, donde encontrarás algunos trabajos en los que he participado.
+                    </p> -->
+                </div>
+                
+            </div>
+
+            <div class="row mb-4">
+                <div id="network_options" class="col-12 col-sm-12 col-md-4 col-lg-3 d-none">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-outline-dark btn-style1" data-wow-duration="2s" data-wow-delay="5s"> <i class="bi bi-github"></i> Github  </button>
+                        <button class="btn btn-outline-primary btn-style1 "> <i class="bi bi-file-earmark-person-fill"></i> Currículum </button>
+                    </div>
                 </div>
             </div>
+            <div class="row mb-4">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <!-- <button class="btn btn-outline-primary">
+                        <i class="bi bi-arrow-down-circle-fill" style="font-size: 30px;"></i>
+                    </button> -->
+                    <button id="down_arrow" type="button" class="btn btn-outline-primary btn-circle btn-xl d-none" onclick="desplazarseAlPortafolio();">
+                        <i class="bi bi-caret-down-fill"></i>
+                    </button>
+                    
+                </div>
+            </div>
+
+
         </section>
 
         
 
-        <div class="album py-5 bg-light">
+        <div id="contenido_portafolio" class="album py-5 bg-light d-none">
             <div class="container">
 
                 <div class="row pb-5">
+                    <h2 class="fw-light text-center py-3"> PORTAFOLIO DE TRABAJOS  </h2>
                     <div class="col text-center">
-                      <button class="btn btn-outline-secondary" onclick="mostrarDiv('diseno')">Diseño</button>
-                      <button class="btn btn-outline-secondary" onclick="mostrarDiv('programacion')">Programación</button>
-                      <button type="button" class="btn btn-outline-dark mr-md-3 mb-2 mb-md-0">Dark</button>
+                        <button class="btn btn-outline-dark btn-style1" onclick="mostrar('todas')"> TODAS </button>
+                        <button class="btn btn-outline-dark btn-style1" onclick="mostrar('diseno')"> PAGINAS WEB </button>
+                        <button class="btn btn-outline-dark btn-style1" onclick="mostrar('programacion')"> APP WEB </button>
+                        <button class="btn btn-outline-dark btn-style1" onclick="mostrar('macro')"> MACROS  </button>
                     </div>
                 </div>
 
@@ -103,7 +151,7 @@
 
 
                     <!-- SECCION #1  -->
-                    <div class="col" id="diseno"> 
+                    <div class="col diseno" id="diseno"> 
                         <div class="card shadow-sm">
                             <a data-bs-toggle="modal" data-bs-target="#modal-1" href="#">
                                 <img class="img-fluid" src="./public/images/banners/Spa_Akemi.png" alt="spa_akemi_thumbnail">
@@ -113,7 +161,7 @@
                     </div>
 
                     <!-- SECCION #2  -->
-                    <div class="col" id="diseno">
+                    <div class="col diseno" id="diseno">
                         <div class="card shadow-sm">
                             <a data-bs-toggle="modal" data-bs-target="#modal-2" href="#">
                                 <img class="img-fluid" src="./public/images/banners/capibox.png" alt="capibox_thumbnail">
@@ -123,7 +171,7 @@
                     </div>
 
                     <!-- SECCION #3  -->
-                    <div class="col" id="diseno">
+                    <div class="col diseno" id="diseno">
                         <div class="card shadow-sm">
                             <a data-bs-toggle="modal" data-bs-target="#modal-3" href="#">
                                 <img class="img-fluid" src="./public/images/banners/Chorrreras_Perico.png" alt="chorreras_perico_thumbnail">
@@ -133,7 +181,7 @@
                     </div>
 
                     <!-- SECCION #4  -->
-                    <div class="col" id="programacion">
+                    <div class="col programacion" id="programacion">
                         <div class="card shadow-sm">
                             <a data-bs-toggle="modal" data-bs-target="#modal-4" href="#">
                                 <img class="img-fluid" src="./public/images/banners/Imaster_ColombiaTour.png" alt="Imaster_ColombiaTour_thumbnail">
@@ -143,7 +191,7 @@
                     </div>
 
                     <!-- SECCION #5  -->
-                    <div class="col" id="programacion">
+                    <div class="col programacion" id="programacion">
                         <div class="card shadow-sm">
                             <a data-bs-toggle="modal" data-bs-target="#modal-5" href="#">
                                 <img class="img-fluid" src="./public/images/banners/cinema_MERN.png" alt="Cinema_MERN_thumbnail">
@@ -153,27 +201,27 @@
                     </div>
 
                     <!-- SECCION #6  -->
-                    <div class="col" id="programacion">
+                    <div class="col programacion" id="programacion">
                         <div class="card shadow-sm">
                             <a data-bs-toggle="modal" data-bs-target="#modal-6" href="#">
                                 <img class="img-fluid" src="./public/images/banners/Captacion_recetas.png" alt="Recetas_thumbnail">
                             </a>
-                            <div class="card-body"> <h5 class="text-center"> Captacion de recetas </h5> </div>
+                            <div class="card-body"> <h5 class="text-center"> Captacion de Recetas </h5> </div>
                         </div>
                     </div>
 
                     <!-- SECCION #7  -->
-                    <div class="col" id="programacion">
+                    <div class="col programacion" id="programacion">
                         <div class="card shadow-sm">
                             <a data-bs-toggle="modal" data-bs-target="#modal-7" href="#">
                                 <img class="img-fluid" src="./public/images/banners/Seguridad_TQ.png" alt="Gestion_riesgos__thumbnail">
                             </a>
-                            <div class="card-body"> <h5 class="text-center"> Gestión de riesgos e incidentes </h5> </div>
+                            <div class="card-body"> <h5 class="text-center"> Gestión de Riesgos  </h5> </div>
                         </div>
                     </div>
 
                     <!-- SECCION #8  -->
-                    <div class="col" id="programacion">
+                    <div class="col programacion" id="programacion">
                         <div class="card shadow-sm">
                             <a data-bs-toggle="modal" data-bs-target="#modal-8" href="#">
                                 <img class="img-fluid" src="./public/images/banners/tienda_Laravel.png" alt="Tienda_virtual_thumbnail">
@@ -181,6 +229,40 @@
                             <div class="card-body"> <h5 class="text-center"> Tienda Laravel </h5> </div>
                         </div>
                     </div>
+
+
+        
+
+                    <!-- SECCION #10 (MACRO)  -->
+                    <div class="col macro">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-10" href="#">
+                                <img class="img-fluid" src="./public/images/banners/macro_capitalhumano.JPG" alt="Macro_1_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Capital Humano</h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #11 (MACRO)  -->
+                    <div class="col macro">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-11" href="#">
+                                <img class="img-fluid" src="./public/images/banners/macro_SSTA.JPG" alt="Macro_2_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Informes SSTA </h5> </div>
+                        </div>
+                    </div>
+
+                    <!-- SECCION #11 (MACRO)  -->
+                    <div class="col macro">
+                        <div class="card shadow-sm">
+                            <a data-bs-toggle="modal" data-bs-target="#modal-12" href="#">
+                                <img class="img-fluid" src="./public/images/banners/macro_generadorppt.JPG" alt="Macro_2_thumbnail">
+                            </a>
+                            <div class="card-body"> <h5 class="text-center"> Generador PPT </h5> </div>
+                        </div>
+                    </div>
+
 
 
 
@@ -231,10 +313,10 @@
                                                     <div class="tab-pane container fade" id="page">
                                                         <div class="container mt-5">
                                                             <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/EZ1TKqi7zug?si=aaJySUSeHALsRdo6" 
-                                                                    width="560" height="315"  frameborder="0" allowfullscreen
-                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                ></iframe>
+                                                                <iframe src="https://www.youtube.com/embed/EZ1TKqi7zug?si=qupJPTp-zUZ1Zshl" loading="lazy"
+                                                                    width="560" height="315"  title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -304,10 +386,10 @@
                                                     <div class="tab-pane container fade" id="page-2">
                                                         <div class="container mt-5">
                                                             <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/sL1gyM-hW4A?si=NtvsFNyt9gITRs-J&rel=0" 
-                                                                    width="560" height="315"  frameborder="0" allowfullscreen
-                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                ></iframe>
+                                                                <iframe src="https://www.youtube.com/embed/sL1gyM-hW4A?si=TIPnze4ah18r0R_W" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -376,19 +458,19 @@
                                                             </p>
 
                                                             <div class="col-md-12 mt-4">
-                                                                <div class="py-3">Estas viendo: <b class="version-text"> Versión modificada </b></div>
-                                                                <button type="button" class="btn btn-outline-primary d-inline" onclick="cambiarVersion(1)"> Versión original </button>
-                                                                <button type="button" class="btn btn-outline-primary d-inline" onclick="cambiarVersion(2)"> Versión modificada</button>
+                                                                <div class="py-3">Estas viendo: <b class="version-text"> Versión Modificada </b></div>
+                                                                <button type="button" class="btn btn-outline-primary d-inline" onclick="cambiarVersion(1)"> Versión Original </button>
+                                                                <button type="button" class="btn btn-outline-primary d-inline" onclick="cambiarVersion(2)"> Versión Modificada</button>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane container fade" id="page-3">
                                                         <div class="container mt-5">
                                                             <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/d9tUjUUqE8A?si=F5B40-VcvqvXdB3U" 
-                                                                    width="560" height="315"  frameborder="0" allowfullscreen
-                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                ></iframe>
+                                                                <iframe src="https://www.youtube.com/embed/d9tUjUUqE8A?si=F5B40-VcvqvXdB3U" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -402,7 +484,7 @@
                                         <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
                                             <div class="fixed-label text-center">
                                             <div class="fixed-label-bg p-1 px-4">
-                                                <h6 class="text-white version-text"> Versión modificada </h6>
+                                                <h6 class="text-white version-text"> Versión Modificada </h6>
                                             </div>
                                         </div>
                                             <img id="version-img" src="public/images/pagina_competa/chorrerasV2_fullscrren.png" class="img-fluid" alt="chorreras_perico_fullscreen">
@@ -459,7 +541,7 @@
                                                                 que se registran para adquirir paquetes turisticos.
 
                                                             </p>
-                                                            <h5 class="font-weight-bold text-decoration-underline mt-1"> Roles </h5>
+                                                            <h5 class="mt-1"> <b> <u> Roles </u> </b>  </h5>
                                                             <b> Cliente: </b> 
                                                             <ul class="ul-2">
                                                                 
@@ -480,10 +562,10 @@
                                                     <div class="tab-pane container fade" id="app-4">
                                                         <div class="container mt-5">
                                                             <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/BLGs0_rWxGo?si=z_GkTPh7yKvfxtgk" 
-                                                                    width="560" height="315"  frameborder="0" allowfullscreen
-                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                ></iframe>
+                                                                <iframe src="https://www.youtube.com/embed/BLGs0_rWxGo?si=z_GkTPh7yKvfxtgk" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -494,7 +576,7 @@
 
                                         <!-- Pagina web Fullscreen  -->
                                         <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
-                                            <img src="public/images/pagina_competa/app_colombiatours/colombiaTour_page1.png" class="img-fluid" alt="spa_akemi_fullscreen">
+                                            <img src="public/images/pagina_competa/colombiaTour_page1.png" class="img-fluid" alt="spa_akemi_fullscreen">
                                         </div>
                                     </div>
                                 
@@ -551,7 +633,7 @@
                                                                 <b>2. Dashboard:</b> 
                                                                 Desde esta sección se puede gestionar toda la funcionalidad de la pagina web, tanto de peliculas como las reservas.
                                                             </p>
-                                                            <h5 class="font-weight-bold text-decoration-underline mt-1"> Roles </h5>
+                                                            <h5 class="mt-1"> <b> <u> Roles </u> </b>  </h5>
                                                             <b> Cliente: </b> 
                                                             <ul class="ul-2">
                                                                 <li> Consultar peliculas en cartelera.</li>
@@ -572,10 +654,10 @@
                                                     <div class="tab-pane container fade" id="app-5">
                                                         <div class="container mt-5">
                                                             <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/xwqoBZtnr_I?si=yW-1L0JpcFfUrspX" 
-                                                                    width="560" height="315"  frameborder="0" allowfullscreen
-                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                ></iframe>
+                                                                <iframe src="https://www.youtube.com/embed/xwqoBZtnr_I?si=yW-1L0JpcFfUrspX" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -658,10 +740,10 @@
                                                     <div class="tab-pane container fade" id="app-6">
                                                         <div class="container mt-5">
                                                             <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/BOOc32lH1_A?si=XrGm88IkvHxFuo5u" 
-                                                                    width="560" height="315"  frameborder="0" allowfullscreen
-                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                ></iframe>
+                                                                <iframe src="https://www.youtube.com/embed/BOOc32lH1_A?si=XrGm88IkvHxFuo5u" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -750,10 +832,10 @@
                                                     <div class="tab-pane container fade" id="app-7">
                                                         <div class="container mt-5">
                                                             <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/Ot4m9RdLpeI?si=H2uInguh-UnHnG6i" 
-                                                                    width="560" height="315"  frameborder="0" allowfullscreen
-                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                ></iframe>
+                                                                <iframe src="https://www.youtube.com/embed/Ot4m9RdLpeI?si=H2uInguh-UnHnG6i" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -838,10 +920,10 @@
                                                     <div class="tab-pane container fade" id="app-8">
                                                         <div class="container mt-5">
                                                             <div class="ratio ratio-16x9">
-                                                                <iframe src="https://www.youtube.com/embed/iS-vu0jXS1E?si=_57GCjNnS5jDRu6z" 
-                                                                    width="560" height="315"  frameborder="0" allowfullscreen
-                                                                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                ></iframe>
+                                                                <iframe src="https://www.youtube.com/embed/iS-vu0jXS1E?si=_57GCjNnS5jDRu6z" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -864,11 +946,256 @@
                         </div>
                     </div>
 
+                
+                    
+                    <!-- MODAL #10 - MACRO CAPITAL HUMANO -->
+                    <div class="modal fade m-0 p-0" id="modal-10" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Macro Capital Humano </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-excel"> MS EXCEL </span>
+                                                <span class="badge tag-vba"> VBA </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-10">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#page-10">Macro </a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-10">
+                                                        <div class="container mt-5">
+                                                            <p>
+                                                                                                                                
+                                                                La macro tiene como objetivo principal establecer un control en la gestión de perfiles de cargos, así como en la elaboración de
+                                                                informes de selección para los candidatos que aspiran a ocupar dichos cargos, y en la gestión de retiros de personal. 
+                                                                <br>
+                                                                Cuenta con roles, entre los que se incluye el rol de ADMIN, así como otros roles por Zonas.
+                                                            </p>
+                                                            <h5 class="mt-1"> <b> <u>Roles:</u>  </b> </h5>
+                                                            <b> ADMIN: </b> 
+                                                            <ul>
+                                                                <li> Crear, consultar, modificar perfiles de cargo. </li>
+                                                                <li> Activar, desactivar, Aprobar perfiles de cargo. </li>
+                                                                <li> Crear, consultar, modificar informes de selección. </li>
+                                                                <li> Crear, consultar, modificar registros de retiros. </li>
+                                                                <li> Consultar informes personalizados de: retiros, rotación no deseada. </li>
+                                                                <li> Actualizar bases que se usan para funcionamiento de perfiles, selección y retiros. </li>
+                                                            </ul> 
+                                                               
+                                                            <b> ZONAS:</b>
+                                                            <p>Cuenta con los mismos privilegios de ADMIN a excepción de:</p>
+                                                            <ul>
+                                                                <li> Perfiles de cargo creados, quedan con estado 'Por aprobar'. ADMIN debe validarlos para que sean visibles a todos los usuarios.</li>
+                                                                <li> Solo puede modificar perfiles de cargos que sean creados por el mismo. </li>
+                                                                <li> No puede Actualizar bases para funcionamiento de perfiles, selección y retiros.</li>
+                                                            </ul>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="page-10">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/XgC1ZYPcpKI?si=SpnAaYBAnxFt7DDv" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image-100  d-flex align-items-center mt-2"> 
+                                            <img src="public/images/pagina_competa/macro_capitalhumano_full.JPG" class="img-fluid" alt="capitalHumano_fullscreen">
+                                        </div>
+                                    </div>
+
+
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- MODAL #11 - MACRO INFORMES SSTA-->
+                    <div class="modal fade m-0 p-0" id="modal-11" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Macro Informes SSTA </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-excel"> MS EXCEL </span>
+                                                <span class="badge tag-vba"> VBA </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-11">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#page-11">Macro </a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-11">
+                                                        <div class="container mt-5">
+                                                            <p>
+                                                                Esta macro automatiza la generación de varios informes (9 en total), que se utilizan en el area de: Seguridad, Salud en el Trabajo y de Gestión Ambiental
+                                                                de la empresa que contrato el servicio. 
+                                                                <br><br>
+                                                                Cada informe requiere de unas determinadas bases, las cuales la macro procesa y con ellas genera el informe. 
+                                                                Los informes estan separados por hojas enumeradas, cada una cuenta con varias tablas y graficas las cuales se  actualizan dinamicamente con la macro.
+                                                                <br><br>
+                                                                Cuenta tambien con una 'Hoja Resumen', la cual toma solo datos relevantes de cada uno de los otros informes y genera
+                                                                un informe Final ya sea para Negocios, clientes, Zonas o empresas.
+                                                            </p>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="page-11">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/jKG1kL7xgOA?si=KHbptSLnNq069NmN" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image-100  d-flex align-items-center mt-2"> 
+                                            <img src="public/images/pagina_competa/macro_SSTA_full.JPG" class="img-fluid" alt="SSTA_fullscreen">
+                                        </div>
+                                    </div>
+
+                                    
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MODAL #12 - MACRO GENERADOR PPT-->
+                    <div class="modal fade m-0 p-0" id="modal-12" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-3" id="staticBackdropLabel"> Macro Generador de PPT </h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+
+                                        <!-- Inicio Contenido  -->
+                                        <div class="col-md-6 mb-2"> 
+                                            
+                                            <!-- Tag Skills  -->
+                                            <div class="col-md-12">
+                                                <span class="badge tag-excel"> MS EXCEL </span>
+                                                <span class="badge tag-vba"> VBA </span>
+                                            </div>
+                                            <hr>
+
+                                            <div class="container" style="margin-top: 10px;">
+                                                <ul class="nav nav-tabs">
+                                                    <li class="nav-item"> <a class="nav-link active" data-bs-toggle="tab" href="#info-12">Información </a> </li>
+                                                    <li class="nav-item"> <a class="nav-link" data-bs-toggle="tab" href="#page-12">Macro </a> </li>
+                                                </ul>
+                                                
+                                                <div class="tab-content">
+                                                    <div class="tab-pane container active" id="info-12">
+                                                        <div class="container mt-5">
+                                                            <p>
+                                                                La macro generadora de PPT, se utliza para poder pegar tablas de informes en una presentación Power Point.
+                                                                <br><br>
+                                                                La macro cuenta con dos hojas donde se parametriza la información necesaria su funcionamiento, entre las cuales se le asigna el excel de donde sacara la información, las hojas, 
+                                                                el nombre de las tablas dinamiacas y el valor para los filtros de la dinamicas en casos que se requiera cambiar estos campos, y el rango de ubicacion de la tabla final 
+                                                                (la tabla arma un informe de manera dinamica dependiendo de los filtros de las dinamicas).
+                                                                <br><br>
+                                                                Adicionalmente cuenta con funciones para que desde un informe de powerPoint, pueda generar las dimensiones(alto, ancho) y posicion(top, left) de las imagenes en cada slide, 
+                                                                para facilitar el acceso de esta información que debe de incluirse en los parametros que usa la macro.
+                                                     
+                                                                
+                                     
+                                                            </p>
+                                                            <hr>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tab-pane container fade" id="page-12">
+                                                        <div class="container mt-5">
+                                                            <div class="ratio ratio-16x9">
+                                                                <iframe src="https://www.youtube.com/embed/-vhgtj_yhEo?si=6t9cQwd8mK9eTrKX" loading="lazy"
+                                                                    width="560" height="315" title="YouTube video player" frameborder="0" 
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                </iframe>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Fin Contenido  -->
+
+                                        <!-- Pagina web Fullscreen  -->
+                                        <div class="col-md-6 overflow-auto modal-fullscreen-image-100  d-flex align-items-center mt-2"> 
+                                            <img src="public/images/pagina_competa/macro_generadorppt_full.JPG" class="img-fluid" alt="PPT_fullscreen">
+                                        </div>
+                                    </div>
+
+                                    
+                                
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"> Cerrar modal </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </div>
     </main>
-    <footer class="text-muted py-5">
+    <!-- <footer class="text-muted py-5">
         <div class="container">
             <p class="float-end mb-1">
                 <a href="#">Volver arriba</a>
@@ -876,48 +1203,18 @@
             <p class="mb-1">El álbum de ejemplo es © Bootstrap, ¡pero descárgualo y personalízalo tú mismo!</p>
             <p class="mb-0">¿Nuevo en Bootstrap? <a href="/">Visita la página de inicio</a> o lee nuestra <a href="/docs/5.1/getting-started/introduction/">guía de introducción</a>.</p>
         </div>
-    </footer>
+    </footer> -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 
-    <script>
-        function cambiarVersion(version){
-            var elementos = document.getElementsByClassName("version-text");
-            var imagen = document.getElementById("version-img");
 
-            if (version==1){
-                for (var i = 0; i < elementos.length; i++) {
-                    elementos[i].textContent = "Versión Original";
-                }
-                imagen.src = "public/images/pagina_competa/chorrerasV1_fullscrren.png";
 
-            }else if(version ==2){
-                for (var i = 0; i < elementos.length; i++) {
-                    elementos[i].textContent = "Versión Modificada";
-                }
-                imagen.src = "public/images/pagina_competa/chorrerasV2_fullscrren.png";
-            }
-        }
+    <!-- Scripts personalizados  -->
 
-        function mostrarDiv(divId) {
-            var divs = document.querySelectorAll('.col[id]');
-            divs.forEach(function(div) {
-                if (div.id === divId) {
-                div.classList.remove('fade-out');
-                div.classList.add('fade-in');
-                div.style.display = 'block';
-                } else {
-                div.classList.remove('fade-in');
-                div.classList.add('fade-out');
-                setTimeout(function() {
-                    div.style.display = 'none';
-                }, 500); // 0.5 segundos, debe coincidir con la duración de la animación
-                }
-            });
-        }
-
-    </script>
+    <script src="public/js/index.js"></script>
+     
+    
 
 </body>
 </html>
