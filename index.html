@@ -40,59 +40,23 @@
 </head>
 
 <body data-new-gr-c-s-check-loaded="14.1123.0" data-gr-ext-installed="">
-
-
-    <!-- <header>
-        <div class="collapse bg-dark" id="navbarHeader">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-8 col-md-7 py-4">
-                        <h4 class="text-white">Sobre mi</h4>
-                        <p class="text-white">
-                            ¡Hola! Soy Carlos David Diaz, un apasionado diseñador web con experiencia en la creación de experiencias digitales atractivas y funcionales.
-                        </p>
-                    </div>
-                    <div class="col-sm-4 offset-md-1 py-4">
-                        <h4 class="text-white">Contacto</h4>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white">Seguir en Twitter</a></li>
-                            <li><a href="#" class="text-white">Like en Facebook</a></li>
-                            <li><a href="#" class="text-white">Envíame un Email</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="navbar navbar-dark bg-dark shadow-sm">
-            <div class="container">
-                <a href="#" class="navbar-brand d-flex align-items-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24">
-                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
-                        <circle cx="12" cy="13" r="4"></circle>
-                    </svg>
-                    <strong>Album</strong>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-        </div>
-    </header> -->
-
-
     <main>
-        <section class="mx-5 my-2 text-center  vh-100">
+        <section class="mx-3 my-2 text-center v-100">
 
-            <div class="col-12 d-flex justify-content-end">
+            <div id="div_ver_portafolio" class="col-12 d-flex justify-content-end">
                 <button id="ver_portafolio" class="btn btn-outline-dark btn-style2"> Quiero ver el portafolio! </button>
             </div>
-            <div class="row row-cols-md-12 my-4">
-                <div class="col-12 col-sm-12 col-md-4 col-lg-3 d-flex align-items-center justify-content-center mb-4">
-                    <img class="col-6 col-sm-5 col-md-12 col-lg-12 img-fluid img-thumbnail animate__animated animate__zoomIn" src="./public//images/perfil/foto 3120x4160_Redimensionada.png" alt="foto_perfil">
+
+            <div class="row row-cols-md-12 mb-4 mt-2">
+
+                <div class="col-5 col-sm-5 col-md-4 col-lg-3 col-xl-3 d-flex align-items-center justify-content-center">
+                    <!-- <img class="img-fluid img-thumbnail animate__animated animate__zoomIn" src="./public//images/perfil/foto 3120x4160_Redimensionada.png" alt="foto_perfil"> -->
+                    <img class="img-fluid img-thumbnail animate__animated animate__zoomIn" src="./public//images/perfil/Foto3.png" alt="foto_perfil">
                 </div>
-                <div id="div-typed-container" class="col-12 col-sm-12 col-md-8 col-lg-9 text-justify">
-                    <span id="typed-container" class="lead text-muted mt-3 col-lg-12"></span>
-                    <span id="typed-container-2" class="lead text-muted mt-3 col-lg-12"></span>
+
+                <div id="div-typed-container" class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-9 px-4 text-justify">
+                    <span id="typed-container-1" class="lead text-muted mt-3"> </span>
+                   
                     <span id="typed-container-3" class="lead text-muted mt-3 col-lg-12"></span>
                     <!-- <p class="lead text-muted mt-3 text-justify">
                         ¡Hola! Soy Carlos David Diaz. <br><br>
@@ -109,15 +73,15 @@
                 
             </div>
 
-            <div class="row mb-4">
+            <div class="row">
                 <div id="network_options" class="col-12 col-sm-12 col-md-4 col-lg-3 d-none">
                     <div class="d-grid gap-2">
-                        <button class="btn btn-outline-dark btn-style1" data-wow-duration="2s" data-wow-delay="5s"> <i class="bi bi-github"></i> Github  </button>
+                        <a href="https://github.com/cdiaz93" target="_blanck" class="btn btn-outline-dark btn-style1" data-wow-duration="2s" data-wow-delay="5s"> <i class="bi bi-github"></i> Github  </a>
                         <button class="btn btn-outline-primary btn-style1 "> <i class="bi bi-file-earmark-person-fill"></i> Currículum </button>
                     </div>
                 </div>
             </div>
-            <div class="row mb-4">
+            <div class="row mb-5">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <!-- <button class="btn btn-outline-primary">
                         <i class="bi bi-arrow-down-circle-fill" style="font-size: 30px;"></i>
@@ -137,17 +101,17 @@
         <div id="contenido_portafolio" class="album py-5 bg-light d-none">
             <div class="container">
 
-                <div class="row pb-5">
+                <div class="row pb-5 mt-5">
                     <h2 class="fw-light text-center py-3"> PORTAFOLIO DE TRABAJOS  </h2>
                     <div class="col text-center">
-                        <button class="btn btn-outline-dark btn-style1" onclick="mostrar('todas')"> TODAS </button>
-                        <button class="btn btn-outline-dark btn-style1" onclick="mostrar('diseno')"> PAGINAS WEB </button>
-                        <button class="btn btn-outline-dark btn-style1" onclick="mostrar('programacion')"> APP WEB </button>
-                        <button class="btn btn-outline-dark btn-style1" onclick="mostrar('macro')"> MACROS  </button>
+                        <button class="btn btn-outline-dark btn-style1 my-1" onclick="mostrar('todas')"> TODAS </button>
+                        <button class="btn btn-outline-dark btn-style1 my-1" onclick="mostrar('diseno')"> PAGINAS WEB </button>
+                        <button class="btn btn-outline-dark btn-style1 my-1" onclick="mostrar('programacion')"> APP WEB </button>
+                        <button class="btn btn-outline-dark btn-style1 my-1" onclick="mostrar('macro')"> MACROS  </button>
                     </div>
                 </div>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-1">
 
 
                     <!-- SECCION #1  -->
@@ -158,6 +122,7 @@
                             </a>
                             <div class="card-body"> <h5 class="text-center"> Spa Akemi </h5> </div>
                         </div>
+                        <!-- <div class="overlay-div"></div> -->
                     </div>
 
                     <!-- SECCION #2  -->
@@ -280,7 +245,7 @@
                                     <div class="row">
 
                                         <!-- Inicio Contenido  -->
-                                        <div class="col-md-6 mb-2"> 
+                                        <div class="col-md-6 mb-2 vh-75"> 
                                             
                                             <!-- Tag Skills  -->
                                             <div class="col-md-12">
@@ -326,7 +291,7 @@
                                         <!-- Fin Contenido  -->
 
                                         <!-- Pagina web Fullscreen  -->
-                                        <div class="col-md-6 overflow-auto modal-fullscreen-image mt-2"> 
+                                        <div class="col-md-6 overflow-auto no-scrollbar modal-fullscreen-image mt-2"  onmousedown="empezarArrastre(event)" onmouseup="terminarArrastre()"> 
                                             <img src="public/images/pagina_competa/spa_akemi_fullscreen.png" class="img-fluid" alt="spa_akemi_fullscreen">
                                         </div>
                                     </div>
@@ -453,7 +418,7 @@
                                                                 ademas se agrego nueva información.
                                                                 <br><br>
                                                                 El trabajo fue realizado para la empresa <a class="text-decoration-none" href="http://sagazsas.com/" target="_blank">Sagaz sas</a>, y los 
-                                                                derechos de autor le corresponden a dicha empresa.
+                                                                derechos de autor de la pagina le corresponden a dicha empresa.
                                                              </br>
                                                             </p>
 
@@ -535,28 +500,13 @@
                                                             <p>
                                                                 Aplicativo web desarrollado con el stack MEVN.
                                                                 Se desarrollo en un grupo conformado por 2 personas, como el proyecto final para uno de los cursos (Desarrollo Stack MEVN) perteneciente 
-                                                                al programa de formación virtual <b> MISION TIC 2021</b>. <br>
+                                                                al programa de formación virtual <b> MISION TIC 2021</b>. <br><br>
                                                                 Consiste en una pagina de venta de paquetes turisticos. 
                                                                 Tambien cuenta con un Dashboard desde el cual el administrador puede crear los paquetes que se mostraran en la pagina, como gestion de usuarios 
                                                                 que se registran para adquirir paquetes turisticos.
 
                                                             </p>
-                                                            <h5 class="mt-1"> <b> <u> Roles </u> </b>  </h5>
-                                                            <b> Cliente: </b> 
-                                                            <ul class="ul-2">
-                                                                
-                                                                <li> Consultar paq. turisticos en general.</li>
-                                                                <li> Consultar paq. turisticos adquiridos.</li>
-                                                                <li> Registrarse en la pagina.</li>
-                                                                <li> Reservar paq. turisticos.</li>
-                                                            </ul> 
-                                                                
-                                                            <b> Administrador:</b>
-                                                            <ul class="ul-2">
-                                                                <li>  Gestión de usuarios. </li>
-                                                                <li>  Gestión de paquetes turisticos. </li>
-                                                            </ul>
-                                                            <hr>
+                                                            
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane container fade" id="app-4">
@@ -618,36 +568,24 @@
                                                 </ul>
                                                 
                                                 <div class="tab-content">
-                                                    <div class="tab-pane container active" id="info-5">
-                                                        <div class="container mt-4">
-                                                            <p>
-                                                                Aplicativo web desarrollado con el stack MERN. 
-                                                                Es un proyecto que desarrollé para aplicar los conocimientos adquiridos sobre el stack en
-                                                                el programa de formación virtual <b> MISION TIC 2021</b>.
-                                                                Consiste en una pagina de reservas en cine:
-                                                                <br><br>
-                                                                <b>1. Pagina web: </b> Donde se pueden ver los detalles de las peliculas ofrecidas para cartelera.
-                                                                La pagina tambien cuenta con una sección donde se pueden hacer las reservas. para el metodo de pago se 
-                                                                utilizo la API de Paypal.
-                                                                <br><br>
-                                                                <b>2. Dashboard:</b> 
-                                                                Desde esta sección se puede gestionar toda la funcionalidad de la pagina web, tanto de peliculas como las reservas.
-                                                            </p>
-                                                            <h5 class="mt-1"> <b> <u> Roles </u> </b>  </h5>
-                                                            <b> Cliente: </b> 
-                                                            <ul class="ul-2">
-                                                                <li> Consultar peliculas en cartelera.</li>
-                                                                <li> Hacer reserva para una pelicula.</li>
-                                                            </ul> 
-                                                                
-                                                            <b> Administrador:</b>
-                                                            <ul class="ul-2">
-                                                                <li>  Gestión de peliculas. </li>
-                                                                <li>  Gestión de salas de cine. </li>
-                                                                <li>  Gestión de horarios de función. </li>
-                                                                <li>  Consultar reservas de clientes. </li>
-                                                            </ul>
-                                                            <hr>
+                                                    <div class="tab-pane active" id="info-5">
+
+                                                        <div id="informacion-1" class="row">
+                                                            <div  class="container mt-4">
+                                                                <p>
+                                                                    Aplicativo web desarrollado con el stack MERN. 
+                                                                    Es un proyecto que desarrollé para aplicar los conocimientos adquiridos sobre el stack en
+                                                                    el programa de formación virtual <b> MISION TIC 2021</b>.
+                                                                    Consiste en una pagina de reservas en cine:
+                                                                    <br><br>
+                                                                    <b>1. Pagina web: </b> Donde se pueden ver los detalles de las peliculas ofrecidas para cartelera.
+                                                                    La pagina tambien cuenta con una sección donde se pueden hacer las reservas. Para el metodo de pago se 
+                                                                    utilizo la API de Paypal.
+                                                                    <br><br>
+                                                                    <b>2. Dashboard:</b> 
+                                                                    Desde esta sección se puede gestionar toda la funcionalidad de la pagina web, tanto de peliculas como las reservas.
+                                                                </p>   
+                                                            </div>
                                                         </div>
                                                     </div>
 
@@ -714,27 +652,18 @@
                                                     <div class="tab-pane container active" id="info-6">
                                                         <div class="container mt-4">
                                                             <p>
-                                                                Consiste en un sistema para almacenar información de prescripciones medicas, con el fin de poder disponer de esta
+                                                                Consiste en una aplicación para almacenar información de prescripciones medicas, con el fin de poder disponer de estas
                                                                 para análisis y/o generación de informes. <br>
-                                                                Un representante medico es el encargado de registar esta información, la cual tiene prescrita productos de la compañía a la que pertenece.
+                                                                Un representante medico es el encargado de registar prescripciones medicas en el sistema, este documento tiene relacionado productos de la compañía a la que 
+                                                                pertenece el representante. <br>
+                                                                El administrador puede consultar los registros ingresados por los representantes y descagar la información (Excel, comprimido con las evidencias).
+                                                                <br><br>
+                                                                El trabajo fue realizado para la empresa <a class="text-decoration-none" href="http://sagazsas.com/" target="_blank">Sagaz sas</a>, y los 
+                                                                derechos de autor de la pagina le corresponden a dicha empresa.
                                                             </p>
-                                                            
-                                                            <h5 class="mb-1">  <b><u>Roles:</u></b> </h5>
-                                                            <b> Usuario (representante medico):</b>
-                                                            <ul>
-                                                                <li>  Registrar información de prescripciones medica junto con su soporte.  </li>
-                                                                <li>  Registrar nuevos medicos / Farmacias </li>
-                                                            </ul>
-                                                            <b> Administrador:</b>
-                                                            <ul>
-                                                                <li>  Consultar resgistros de prescripciones medicas.  </li>
-                                                                <li>  Descargar informacion de prescripciones medicas (Excel). </li>
-                                                                <li>  Descargar soportes de prescripciones medicas (Imagenes).  </li>
-                                                            </ul>
                                                             <br>
-                                                            El trabajo fue realizado para la empresa <a class="text-decoration-none" href="http://sagazsas.com/" target="_blank">Sagaz sas</a>, y los 
-                                                            derechos de autor le corresponden a dicha empresa.
-                                                            <hr>
+                                                           
+                                                            
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane container fade" id="app-6">
@@ -801,7 +730,8 @@
                                                     <div class="tab-pane container active" id="info-7">
                                                         <div class="container mt-4">
                                                             <p>
-                                                                La plataforma fue diseñada para gestionar los riesgos y incidentes de seguridad relacionados con terceros en el entorno empresarial. <br><br>
+                                                                La plataforma fue diseñada para gestionar los riesgos e incidentes de seguridad relacionados 
+                                                                con terceros dentro de la compañia. <br><br>
                                                                 <b> Riesgos:</b>  Facilita la creación de informes detallados que abarcan tanto los riesgos identificados como aquellos que se han materializado y demandan una acción inmediata. 
                                                                 Esta funcionalidad tiene como objetivo informar a las partes interesadas pertinentes y facilitar la implementación de las medidas 
                                                                 necesarias para abordar y mitigar la situación. <br><br>
@@ -809,24 +739,7 @@
                                                                 <b>Incidentes:</b> Ofrece la capacidad de gestionar los incidentes de seguridad originados por terceros dentro del entorno empresarial. 
                                                                 Tambien facilita la notificación a los superiores de los colaboradores externos respecto a cualquier incidente detectado.
                                                                 <br>
-                                                            </p>
-                                                            <!-- <hr> -->
-                                                            
-
-                                                            <h5 class="mt-1"> <b> <u>Roles:</u>  </b> </h5>
-                                                            <b> Guarda: </b> 
-                                                            <ul>
-                                                                <li> Generar/Editar analisis de un riesgo ocurrido dentro de la empresa.</li>
-                                                            </ul> 
-                                                               
-                                                            <b> Administrador:</b>
-                                                            <ul>
-                                                                <li>  Consultar/Validar riesgos generados por un guarda y los notifica a las partes interesadas.  </li>
-                                                                <li>  Genera informes y notificaciones de incidentes ocasionados por terceros. </li>
-                                                                <li>  Generar informes graficos con la información de riesgos e incidentes. </li>
-                                                            </ul>
-                                                            <hr>
-
+                                                            </p>     
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane container fade" id="app-7">
@@ -892,29 +805,10 @@
                                                     <div class="tab-pane container active" id="info-8">
                                                         <div class="container mt-4">
                                                             <p>
-                                                                Es un aplicativo e-commerce basico. Se puede gestionar el funcionamiento de la pagina web mediante un panel administrativo.<br><br>
-                                                                
+                                                                Es un aplicativo e-commerce basico desarrollado con laravel 10. Se puede gestionar todo 
+                                                                el funcionamiento de la pagina web mediante un panel administrativo.<br><br>
+                                                                La página cuenta con un carrito de compras para poder acumular todos los artículos que vaya a comprar el cliente.
                                                             </p>
-                                                            <!-- <hr> -->
-                                                            
-
-                                                            <h5 class="mt-1"> <b> <u>Roles:</u>  </b> </h5>
-                                                            <b> Cliente: </b> 
-                                                            <ul>
-                                                                <li> Consultar articulos ofrecidos para la venta. </li>
-                                                                <li> Armar un carrito de compras. </li>
-                                                                <li> Pagar articulos de un carrito de compras. </li>
-                                                            </ul> 
-                                                               
-                                                            <b> Administrador:</b>
-                                                            <ul>
-                                                                <li>  Gestionar articulos para la pag. web.  </li>
-                                                                <li>  Gestionar categorias. </li>
-                                                                <li>  Gestionar subcategorias. </li>
-                                                                <li>  Gestionar marcas para articulos. </li>
-                                                                <li>  Consultar historial de compras de clientes.</li>                                                            </ul>
-                                                            <hr>
-
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane container fade" id="app-8">
@@ -977,33 +871,20 @@
                                                 
                                                 <div class="tab-content">
                                                     <div class="tab-pane container active" id="info-10">
-                                                        <div class="container mt-5">
+                                                        <div class="container mt-4">
                                                             <p>
                                                                                                                                 
-                                                                La macro tiene como objetivo principal establecer un control en la gestión de perfiles de cargos, así como en la elaboración de
+                                                                Tiene como objetivo establecer un control en la gestión de perfiles de cargos, así como en la elaboración de
                                                                 informes de selección para los candidatos que aspiran a ocupar dichos cargos, y en la gestión de retiros de personal. 
-                                                                <br>
-                                                                Cuenta con roles, entre los que se incluye el rol de ADMIN, así como otros roles por Zonas.
+                                                                Cuenta con roles, entre los que se incluye el rol de ADMIN, así como otros roles por Zonas. El admin tiene control absoluto de la macro, los 
+                                                                roles de zona tienen varias excepciones:
                                                             </p>
-                                                            <h5 class="mt-1"> <b> <u>Roles:</u>  </b> </h5>
-                                                            <b> ADMIN: </b> 
-                                                            <ul>
-                                                                <li> Crear, consultar, modificar perfiles de cargo. </li>
-                                                                <li> Activar, desactivar, Aprobar perfiles de cargo. </li>
-                                                                <li> Crear, consultar, modificar informes de selección. </li>
-                                                                <li> Crear, consultar, modificar registros de retiros. </li>
-                                                                <li> Consultar informes personalizados de: retiros, rotación no deseada. </li>
-                                                                <li> Actualizar bases que se usan para funcionamiento de perfiles, selección y retiros. </li>
-                                                            </ul> 
-                                                               
-                                                            <b> ZONAS:</b>
-                                                            <p>Cuenta con los mismos privilegios de ADMIN a excepción de:</p>
                                                             <ul>
                                                                 <li> Perfiles de cargo creados, quedan con estado 'Por aprobar'. ADMIN debe validarlos para que sean visibles a todos los usuarios.</li>
                                                                 <li> Solo puede modificar perfiles de cargos que sean creados por el mismo. </li>
-                                                                <li> No puede Actualizar bases para funcionamiento de perfiles, selección y retiros.</li>
+                                                                <li> No puede Actualizar bases para el funcionamiento de los perfiles, selección y retiros.</li>
                                                             </ul>
-                                                            <hr>
+                                                        
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane container fade" id="page-10">
@@ -1067,7 +948,7 @@
                                                 
                                                 <div class="tab-content">
                                                     <div class="tab-pane container active" id="info-11">
-                                                        <div class="container mt-5">
+                                                        <div class="container mt-4">
                                                             <p>
                                                                 Esta macro automatiza la generación de varios informes (9 en total), que se utilizan en el area de: Seguridad, Salud en el Trabajo y de Gestión Ambiental
                                                                 de la empresa que contrato el servicio. 
@@ -1078,7 +959,7 @@
                                                                 Cuenta tambien con una 'Hoja Resumen', la cual toma solo datos relevantes de cada uno de los otros informes y genera
                                                                 un informe Final ya sea para Negocios, clientes, Zonas o empresas.
                                                             </p>
-                                                            <hr>
+                                                            
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane container fade" id="page-11">
@@ -1141,21 +1022,19 @@
                                                 
                                                 <div class="tab-content">
                                                     <div class="tab-pane container active" id="info-12">
-                                                        <div class="container mt-5">
+                                                        <div class="container mt-4">
                                                             <p>
-                                                                La macro generadora de PPT, se utliza para poder pegar tablas de informes en una presentación Power Point.
-                                                                <br><br>
-                                                                La macro cuenta con dos hojas donde se parametriza la información necesaria su funcionamiento, entre las cuales se le asigna el excel de donde sacara la información, las hojas, 
-                                                                el nombre de las tablas dinamiacas y el valor para los filtros de la dinamicas en casos que se requiera cambiar estos campos, y el rango de ubicacion de la tabla final 
-                                                                (la tabla arma un informe de manera dinamica dependiendo de los filtros de las dinamicas).
-                                                                <br><br>
-                                                                Adicionalmente cuenta con funciones para que desde un informe de powerPoint, pueda generar las dimensiones(alto, ancho) y posicion(top, left) de las imagenes en cada slide, 
-                                                                para facilitar el acceso de esta información que debe de incluirse en los parametros que usa la macro.
-                                                     
+                                                                Esta macro se utiliza para poder pegar tablas de informes en una presentación Power Point.
+                                                                <br>
+                                                                Cuenta con dos hojas donde se parametriza la información necesaria para su funcionamiento, entre las cuales se le asigna el excel de donde sacara la información, las hojas, 
+                                                                el nombre de las tablas dinamiacas y el valor para los filtros de la dinamicas en casos que se requiera cambiar estos campos, y el rango de ubicación de la tabla final que se 
+                                                                pegara en el PowerPoint.
                                                                 
-                                     
+                                                                <br><br>
+                                                                Adicionalmente cuenta con funciones para que desde un informe de PowerPoint, pueda generar las dimensiones(alto, ancho) y posición(top, left) de las imagenes en cada slide, 
+                                                                para facilitar el acceso de esta información que debe de incluirse en los parametros que usa la macro.
                                                             </p>
-                                                            <hr>
+                                                          
                                                         </div>
                                                     </div>
                                                     <div class="tab-pane container fade" id="page-12">

@@ -2,9 +2,49 @@
 
 
 
+
+
+
 //Inicializar FancyBox Image
 Fancybox.bind("[data-fancybox]", {});
 
+
+
+
+
+
+
+
+//En el div princial de información un proyecto pasa al siguiente div para mostrar más detalles.
+function siguiente(){
+    const tiempo= 1000;
+    informacion1 = document.getElementById("informacion-1");
+    informacion2 = document.getElementById("informacion-2");
+    informacion1.classList.add("animate__animated", "animate__fadeOutDownBig", "animate__fast");
+    setTimeout(function() {
+        informacion1.classList.remove("animate__animated", "animate__fadeOutDownBig", "animate__fast");
+        informacion1.classList.add( "d-none");
+        informacion2.classList.add("animate__animated", "animate__fadeInUpBig", "animate__fast");
+        informacion2.classList.remove( "d-none");
+    }, tiempo);
+}
+
+//En el div princial de información un proyecto pasa al siguiente div para mostrar más detalles.
+function atras(){
+    const tiempo= 1000;
+    informacion1 = document.getElementById("informacion-1");
+    informacion2 = document.getElementById("informacion-2");
+
+    informacion2.classList.remove("animate__animated", "animate__fadeInUpBig", "animate__fast");
+    informacion2.classList.add("animate__animated", "animate__fadeOutDownBig", "animate__fast");
+
+    setTimeout(function() {
+        informacion2.classList.remove("animate__animated", "animate__fadeOutDownBig", "animate__fast");
+        informacion2.classList.add( "d-none");
+        informacion1.classList.add("animate__animated", "animate__fadeInUpBig", "animate__fast");
+        informacion1.classList.remove( "d-none");
+    }, tiempo);
+}
 
 
 //------------------------------------------------
@@ -16,7 +56,7 @@ var textoCompletoCorto =[
     "Hola aqui va la descripción corta de mi persona, describo mis habildiades <br> invito a portafolio."
 ];
 var textoCompleto  = [
-    "¡Hola! Soy Carlos David Diaz. <br><br>"+ 
+    "<h4>¡Hola! Soy Carlos Diaz. </h4> <br>"+ 
     "Un apasionado diseñador web con experiencia en la creación de interfaces digitales atractivas y funcionales. "+
     "A lo largo de mi carrera, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole. <br><br>"+
     "Mis habilidades incluyen trabajar con una variedad de tecnologías web, incluyendo HTML, CSS, JavaScript, PHP y los stacks "+ 
@@ -30,7 +70,7 @@ var textoCompleto  = [
 let verPortafolioClicked = false; 
 
 //Usar typeJs para mostar 'textoCompleto' en secuencia. en el tag con id="typed-container"
-const typed = new Typed('#typed-container', {
+const typed = new Typed('#typed-container-1', {
     strings: textoCompleto,
     typeSpeed: 30,
     backSpeed: 1,
@@ -114,6 +154,10 @@ function animacionesPagina() {
         btnPortafolio = document.getElementById("ver_portafolio");
         btnPortafolio.disabled = true;
         btnPortafolio.className += (" animate__animated animate__bounceOut");
+
+        // divPortafolio = document.getElementById("div_ver_portafolio");
+        // divPortafolio.classList.add('d-none');
+        
     }, 0);
 
     // 2. Hace visible y realiza animacion de entrada para los botones de network_options (Github, CV)
