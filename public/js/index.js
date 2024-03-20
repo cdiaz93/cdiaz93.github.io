@@ -38,10 +38,6 @@ var habilidades =[
 ]
 
 
-
-
-
-
 //Bandera para saber si ejecutar o no onComplete de typed
 let verPortafolioClicked = false; 
 
@@ -52,30 +48,6 @@ function eliminarCursor(){
     }
 }
 
-//Usar typeJs para mostar 'textoCompleto' en secuencia. en el tag con id="typed-container"
-// const typed = new Typed('#typed-container-1', {
-//     strings: parrafo1,
-//     typeSpeed: 30,
-//     backSpeed: 1,
-//     startDelay: 2500, //Milisegundos
-//     onComplete: function() {
-//         if (!verPortafolioClicked) {
-//             const typed2 = new Typed('#typed-container-2', {
-//                 strings: parrafo2,
-//                 typeSpeed: 30,
-//                 backSpeed: 1,
-//                 startDelay: 0, //Milisegundos
-//                 onComplete: function() {
-//                     if (!verPortafolioClicked) {
-//                         animacionHabilidades();
-//                         animacionesPagina();
-//                     }
-//                 } 
-//             });
-//         }
-//     } 
-// });
-
 const typed = new Typed('#typed-container-1', {
     strings: parrafoCompleto,
     typeSpeed: 20,
@@ -83,73 +55,12 @@ const typed = new Typed('#typed-container-1', {
     startDelay: 2000, //Milisegundos
     onComplete: function() {
         if (!verPortafolioClicked) {
-            // animacionHabilidades();
             animacionesPagina();
         }
     } 
 });
 
 
-
-
-  
-// Llama a la función cuando se carga la página y cuando se desplaza la ventana
-// document.addEventListener('DOMContentLoaded', textoHabilidadesTyped);
-// window.addEventListener('scroll', textoHabilidadesTyped);
-
-
-// // Función para verificar si el elemento está en la pantalla
-// function ubicacionScroll(el) {
-//     var rect = el.getBoundingClientRect();
-//     console.log(rect);
-//     return (
-//       rect.top <= 300 && 
-//       rect.top >= -100 &&
-//       rect.left >= 0
-//     );
-// }
-  
-// // Función para activar Typed.js cuando la sección Habilidades está en pantalla
-// var repetir =0
-// function textoHabilidadesTyped() {
-//     var sectionHabilidades = document.getElementById('section-habilidades');
-//     if (ubicacionScroll(sectionHabilidades)) {
-//         console.log(habilidades.length);
-//         for(let i=0; i<habilidades.length; i++){
-//             if(repetir===0){
-//                 setTimeout(() => {
-//                     var texto = habilidades[i];
-//                     var options = {
-//                         strings: [texto],
-//                         typeSpeed: 50,
-//                     };
-//                     const typedxd = new Typed('#titulo-habilidad-'+i, options);
-//                     const skills = document.getElementById("habilidades-"+i);
-//                     skills.classList.add("animate__animated", "animate__zoomIn", "animate__delay-1s");
-//                     skills.classList.remove("d-none");
-                
-
-//                 }, i * 700); 
-//             }
-//         }
-//         repetir=repetir+1;
-        
-//     }
-// }
-
-
-
-
-
-
-
-
-// Cambia la velocidad  de escritura de typedJS para TextoCompleto
-// document.getElementById('ver_portafolio').addEventListener('click', function() {
-//     verPortafolioClicked = true; 
-//     typed.typeSpeed = 0;
-//     typed.start();
-// });
 
 // Cambia la velocidad  de escritura de typedJS para Parrafos
 document.getElementById('ver_portafolio').addEventListener('click', function() {
@@ -173,29 +84,6 @@ function desplazarseHacia(id){
 }
 
 
-//Animaciones para el apartado de las Skills en la presentación
-function animacionHabilidades(){
-
- 
-
-    const num = 5
-
-    for(let a=1; a <= num; a++){
-
-        
-        setTimeout(() => {
-            const skills = document.getElementById("skill-"+a);
-            skills.classList.add("animate__animated", "animate__bounceInUp");
-            skills.classList.remove("d-none");
-        }, a * 500); 
-
-    }
-
-    titulo = document.getElementById("titulo_habildiades");
-    titulo.classList.add("animate__animated", "animate__backInRight");
-    titulo.classList.remove("d-none");
-
-}
 
 //Elimina todas las class que se usan para activar animaciones de Animate.css
 function eliminarAnimaciones(){
@@ -253,7 +141,6 @@ function animacionesPagina() {
             cursor = document.querySelectorAll('.typed-cursor');
             cursor.forEach(function(cur) { cur.remove();});
         }
-
     }, 0);
 
     // 2. Hace visible y realiza animacion de entrada para los botones de network_options (Github, CV)
@@ -261,9 +148,9 @@ function animacionesPagina() {
     setTimeout(function() {
         if(verPortafolioClicked){
             presentacion.classList.add("d-none");
-            presentacion2.innerHTML  = parrafoCompleto;
-            presentacion.classList.remove("animate__animated", "animate__bounceOut");
-            presentacion2.classList.add("animate__animated", "animate__bounceIn");
+            presentacion.innerHTML  = parrafoCompleto;
+            presentacion.classList.remove("animate__animated", "animate__bounceOut", "d-none");
+            presentacion.classList.add("animate__animated", "animate__bounceIn");
         }
       
         netwok = document.getElementById("network_options");
