@@ -2,7 +2,7 @@
 // Fancybox.bind("[data-fancybox]", {});
 
 
-new WOW().init();
+// new WOW().init();
 
 
 // Inicializar Tooltip de Bootstrap 5 
@@ -123,6 +123,8 @@ function animacionesPagina() {
     var presentacion;
     var cursor 
     var bienvenido;
+    var habilidades;
+    var titulo_habilidades;
 
     // -----------------------------------------------------------------------------------
     // NOTA: 'verPortafolioClicked' se usa para determinar si se omitio la presentacion
@@ -132,6 +134,9 @@ function animacionesPagina() {
     presentacion = document.getElementById("typed-container-1");
     presentacion2 = document.getElementById("typed-container-2");
     btnPortafolio = document.getElementById("ver_portafolio");
+
+ 
+    
     setTimeout(function() {
         btnPortafolio.disabled = true;
         btnPortafolio.className += (" animate__animated animate__bounceOut");
@@ -167,31 +172,51 @@ function animacionesPagina() {
         dowmArrow = document.getElementById("down_arrow");
         dowmArrow.classList.remove('d-none');
 
-        bienvenido = document.getElementById("title_welcome");
-        bienvenido.classList.remove('d-none');
-
+        // bienvenido = document.getElementById("title_welcome");
+        // bienvenido.classList.remove('d-none');
 
         document.body.classList.remove("h-overflow");
 
-        // Hace visible la seccion del portafolio 
+
+        // Verificar si el elemento habilidades es visible en la pantalla
+        var habilidades = document.querySelector('#section-habilidades');
+        var rect = habilidades.getBoundingClientRect();
+        var isVisible = (rect.top >= 0 && rect.bottom <= window.innerHeight);
+        if (isVisible) {
+            habilidades.classList.remove('d-none');
+            new WOW().init(); // Iniciar la animación con Wow.js
+        }
+ 
+
+        // Hace visible la seccion de habilidades y portafolio 
         section = document.getElementById("contenido_portafolio");
         section.classList.remove('d-none');
+      
+        
 
-        presentacion = document.getElementById("section-presentacion");
+        // presentacion = document.getElementById("section-presentacion");
         // presentacion.classList.remove('vh-100');
 
         if(!verPortafolioClicked){
-            bienvenido.classList.add("animate__animated", "animate__fadeInUpBig");
+            // bienvenido.classList.add("animate__animated", "animate__fadeInUpBig");
             dowmArrow.classList.add("animate__animated", "animate__zoomIn", "animate__slow");
+
         }else{
-            bienvenido.classList.add("animate__animated", "animate__backInUp");
+            // bienvenido.classList.add("animate__animated", "animate__backInUp");
             dowmArrow.classList.add("animate__animated", "animate__backInUp");
         }
+
+        // titulo_habilidades = document.getElementById("titulo-habilidades");
+        // titulo_habilidades.classList.add("wow", "animate__animated", "animate__bounceInDown");
     }, tiempo*2);
+
+
+
 
     // 4. Solo si verPortafolioClicked=true : Desplaza el scroll hacia la seccion del contenido_portafolio, y realiza animación de rapidez
     if(verPortafolioClicked){
         setTimeout(function() {
+            
 
             btnPortafolio.className += (" d-none");
             section.scrollIntoView({ behavior: "auto", block: "start" });
@@ -221,7 +246,11 @@ function animacionesPagina() {
         setTimeout(function() {
             eliminarAnimaciones();
         }, tiempo*4); 
+
+       
+
     }
+   
 }
 
 

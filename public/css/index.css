@@ -26,51 +26,69 @@
 
 /* Estilos para pantallas extra pequeños (XM) */
 @media (max-width: 575px) {
-    /* .vh-max { min-height: 100vh !important; } */
     .title{ font-size:calc(2.5rem + 0.5vw) !important }
     #typed-container-1 { font-size: calc(0.9rem + 0.5vw) !important }
     .btn-style1{ font-size: 12px !important }
+    p, ul {
+        color: black;
+        font-size: calc(0.9rem + 0.5vh) !important;
+    }
 }
 
 /* Estilos para pantallas pequeños (SM) */
 @media (min-width: 576px) {
-    /* .vh-max {min-height: 100vh !important } */
     .title{ font-size:calc(2.5rem + 0.5vw) !important }
     #typed-container-1{font-size: calc(0.9rem + 0.5vw) !important }
     .btn-style1{ font-size: 12px !important }
+    p, ul {
+        color: black;
+        font-size: calc(0.9rem + 0.5vh) !important;
+    }
 }
 
 /* Estilos para pantallas medianos (MD) */
 @media (min-width: 768px) {
-    /* .vh-max { height: 100vh } */
     .title{ font-size: calc(3.5rem + 0.5vw) !important }
     #typed-container-1 { font-size: calc(1.3rem + 0.5vw) !important }
     .btn-style1{ font-size: 16px !important }
+    p, ul {
+        color: black;
+        font-size: calc(1rem + 0.5vh) !important;
+    }
 }
 
 
 /* Estilos para pantallas grandes (LG) */
 @media (min-width: 992px) {
-    /* .vh-max { height: 100vh } */
     .title{ font-size: calc(4rem + 0.5vw) !important }
     #typed-container-1{ font-size: calc(1.4rem + 0.5vw) !important }
     .btn-style1{ font-size: 16px !important }
+    p, ul {
+        color: black;
+        font-size: calc(1.1rem + 0.5vh) !important;
+    }
 }
 
 /* Estilos para pantallas extra grandes (XL) */
 @media (min-width: 1200px) {
-    /* .vh-max { height: 100vh } */
     .title{ font-size: calc(4.3rem + 0.5vw) !important }
     #typed-container-1{ font-size: calc(1.3rem + 0.5vw) !important }
     .btn-style1{ font-size: 16px !important }
+    p, ul {
+        color: black;
+        font-size: calc(1.1rem + 0.5vh) !important;
+    }
   }
   
 /* Estilos para pantallas extra extra grandes (XXL) */
 @media (min-width: 1400px) {
-    /* .vh-max { height: 100vh } */
     .title{ font-size: calc(5rem + 0.5vw) !important }
     #typed-container-1{ font-size: calc(1.5rem + 0.5vw) !important }
     .btn-style1{ font-size: 16px !important }
+    p, ul {
+        color: black;
+        font-size: calc(1.1rem + 0.5vh) !important;
+    }
 }
 
 
@@ -87,18 +105,14 @@ body{
     --fs-xl: 20px; /* Tamaño de fuente extra grande */
 }
 
-p, ul {
-    color: black;
-    font-size: calc(1.1rem + 0.5vh) !important;
-}
-
-
 .mt-50{ margin-top: 50px }
 .mt-60{ margin-top: 60px }
 .mt-70{ margin-top: 70px }
 .mt-80{ margin-top: 80px }
 
-
+.min-vh-100{
+    min-height: 100vh;
+}
 
 #section-presentacion{
     min-height: 100%;

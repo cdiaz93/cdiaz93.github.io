@@ -50,7 +50,7 @@
 
          
             <div id="div_ver_portafolio" class="col-12 d-flex justify-content-end">
-                <button id="ver_portafolio" class="btn btn-outline-light btn-style2"> Quiero ver el portafolio! </button>
+                <button id="ver_portafolio" class="btn btn-outline-light btn-style2 mx-4 my-3"> Quiero ver el portafolio! </button>
             </div>
 
             <div class="container">
@@ -83,25 +83,26 @@
             </div>
 
             <div class="col-12 col-sm-12 col-md-8 col-lg-12 py-3">
-                <!-- <div class="position-absolute bottom-0 start-50 translate-middle-x  py-3 "> -->
-                    <h4 id="title_welcome" class="text-white fw-bold d-none"> BIENVENIDO </h4>
+                <div class="position-absolute bottom-0 start-50 translate-middle-x  py-3 ">
+                    <!-- <h4 id="title_welcome" class="text-white fw-bold d-none"> BIENVENIDO </h4> -->
                     <button id="down_arrow" type="button" class="btn btn-light btn-circle btn-xl d-none" onclick="desplazarseHacia('section-habilidades');">
                         <i class="bi bi-caret-down-fill"></i>
                     </button>
-                <!-- </div> -->
+                </div>
             </div>
            
 
         </section>
 
 
-        <section id="section-habilidades" class="container mt-60 vh-max">
+        <section id="section-habilidades" class="container mt-60 vh-100 d-none">
             <div class="row">
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 pt-5 wow animate__animated animate__bounceInDown">
-                            <h1 id="titulo_habildiades" class="text-center"> <b class="color-pw-2"> MIS HABILIDADES </b></h1> 
+                        <div id="titulo-habilidades" class="col-12 col-sm-12 col-md-12 col-lg-12 pt-5 wow animate__animated animate__bounceInDown">
+                            <h1 class="text-center d-none  d-md-block"> <b class="color-pw-2"> MIS HABILIDADES </b></h1> 
+                            <h2 class="text-center d-block d-sm-block d-md-none"> <b class="color-pw-2"> MIS HABILIDADES </b></h2> 
                             <p class="text-center"> 
                                 Manejo una amplia variedad de tecnologias para el desarrollo web, 
                                 como tambien para la creación de Macros de excel para la automatización deprocesos 
@@ -111,11 +112,12 @@
 
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="row my-4 wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.5s">
-                                <div class="col-4 col-sm-4 col-md-3 col-lg-3  d-flex align-items-center justify-content-end"> 
-                                    <h2 class="fw-bold"> Fronted </h2> 
+                                <div class="col-12 col-sm-12 col-md-3 col-lg-3  d-flex align-items-center justify-content-left justify-content-md-end"> 
+                                    <h2 class="fw-bold d-none d-md-block">Fronted</h2>
+                                    <h4 class="fw-bold d-block d-sm-none">Fronted </h4>
                                 </div>
-                                <div class="col-8 col-sm-8 col-md-9 col-lg-9">
-                                    <div  class="row row-cols-4 row-cols-sm-4 row-cols-md-5 row-cols-lg-6">
+                                <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                                    <div  class="row row-cols-6 row-cols-sm-6 row-cols-md-6 row-cols-lg-6">
                                         <div class="col my-1">
                                             <img src="public/images/logos/svg/html5.svg" class="img-fluid img-thumbnail svg-image" alt="HTML5" data-bs-toggle="tooltip" data-bs-placement="top" title="HTML5">
                                         </div>
@@ -139,11 +141,12 @@
                             </div>
 
                             <div class="row my-4 wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.8s">
-                                <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex align-items-center justify-content-end"> 
-                                    <h2 class="fw-bold"> Backend </h2> 
+                                <div class="col-12 col-sm-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-left justify-content-md-end"> 
+                                    <h2 class="fw-bold d-none d-md-block">Backend</h2>
+                                    <h4 class="fw-bold d-block d-sm-none">Backend </h4>
                                 </div>
-                                <div class="col-8 col-sm-8 col-md-9 col-lg-9">
-                                    <div  class="row row-cols-4 row-cols-sm-4 row-cols-md-5 row-cols-lg-6">
+                                <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                                    <div  class="row row-cols-6 row-cols-sm-6 row-cols-md-6 row-cols-lg-6">
                                         <div class="col my-1">
                                             <img src="public/images/logos/svg/php.svg" class="img-fluid img-thumbnail svg-image" alt="php" data-bs-toggle="tooltip" data-bs-placement="top" title="PHP">
                                         </div>
@@ -167,11 +170,12 @@
                             </div>
 
                             <div class="row my-4 wow animate__animated animate__fadeInLeftBig" data-wow-delay="1.1s">
-                                <div class="col-4 col-sm-4 col-md-3 col-lg-3  d-flex align-items-center justify-content-end"> 
-                                    <h2 class="fw-bold"> Bases Datos </h2> 
+                                <div class="col-12 col-sm-12 col-md-3 col-lg-3  d-flex align-items-center justify-content-left justify-content-md-end"> 
+                                    <h2 class="fw-bold d-none d-md-block">Bases Datos</h2>
+                                    <h4 class="fw-bold d-block d-sm-none">Bases Datos </h4>
                                 </div>
-                                <div class="col-8 col-sm-8 col-md-9 col-lg-9">
-                                    <div class="row row-cols-4 row-cols-sm-4 row-cols-md-5 row-cols-lg-6">
+                                <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                                    <div class="row row-cols-6 row-cols-sm-6 row-cols-md-6 row-cols-lg-6">
                                         <div class="col my-1">
                                             <img src="public/images/logos/svg/mysql.svg" class="img-fluid img-thumbnail svg-image" alt="MYSQL" data-bs-toggle="tooltip" data-bs-placement="top" title="MySQL">
                                         </div>
@@ -186,11 +190,12 @@
                             </div>
 
                             <div class="row my-4 wow animate__animated animate__fadeInLeftBig" data-wow-delay="1.4s">
-                                <div class="col-4 col-sm-4 col-md-3 col-lg-3 d-flex align-items-center justify-content-end"> 
-                                    <h2 class="fw-bold"> Otros </h2> 
+                                <div class="col-12 col-sm-12 col-md-3 col-lg-3 d-flex align-items-center justify-content-left justify-content-md-end"> 
+                                    <h2 class="fw-bold d-none d-md-block">Otros</h2>
+                                    <h4 class="fw-bold d-block d-sm-none">Otros </h4>
                                 </div>
-                                <div class="col-8 col-sm-8 col-md-9 col-lg-9">
-                                    <div class="row row-cols-4 row-cols-sm-4 row-cols-md-5 row-cols-lg-6">
+                                <div class="col-12 col-sm-12 col-md-9 col-lg-9">
+                                    <div class="row row-cols-6 row-cols-sm-6 row-cols-md-6 row-cols-lg-6">
                                         <div class="col my-1">
                                             <img src="public/images/logos/svg/cpanel.svg" class="img-fluid img-thumbnail svg-image" alt="cPanel" data-bs-toggle="tooltip" data-bs-placement="top" title="cPanel">
                                         </div>
@@ -223,7 +228,7 @@
 
         
 
-        <div id="contenido_portafolio" class="album py-5 bg-light">
+        <div id="contenido_portafolio" class="album py-5 bg-light min-vh-100 d-none">
             <div class="container">
 
                 <div class="row pb-5 mt-5">
@@ -236,7 +241,7 @@
                     </div>
                 </div>
 
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mx-1">
+                <div class="row  row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-3 mx-1">
 
 
                     <!-- SECCION #1  -->
