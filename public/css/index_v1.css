@@ -1,9 +1,9 @@
 
-
+/* 
 @font-face {
     font-family: 'Ruqaa';
     src: url('public/fonts/ruqaa/ArefRuqaaInk-Regular.ttf') format('truetype');
-}
+} */
 @font-face {
     font-family: 'Gasoek';
     src: url('../fonts/GasoekOneLatin/GasoekOne-Regular.ttf') format('truetype');
@@ -25,95 +25,27 @@
 
 
 body{
-    font-family: 'Grotesk';
-}
+ font-family: 'Grotesk';
 
-:root {
-    --fs-sm: 14px; /* Tamaño de fuente pequeño */
-    --fs-md: 16px; /* Tamaño de fuente mediano */
-    --fs-lg: 18px; /* Tamaño de fuente grande */
-    --fs-xl: 20px; /* Tamaño de fuente extra grande */
-}
+    /* GRADIANTS  */
+    /* background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,7,84,1) 7%, rgba(17,16,107,1) 22%, rgba(27,27,131,1) 42%, rgba(33,33,152,1) 50%, rgba(29,50,176,1) 60%, rgba(19,126,199,1) 76%, rgba(17,184,218,1) 100%); */
 
-p, ul {
-    color: black;
-    font-size: calc(1.1rem + 0.5vh) !important;
-}
+    /* BACKGROUND URL  */
+    /* background: url(https://images.unsplash.com/photo-1523961131990-5ea7c61b2107?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
 
 
-.mt-50{ margin-top: 50px }
-.mt-60{ margin-top: 60px }
-.mt-70{ margin-top: 70px }
-.mt-80{ margin-top: 80px }
-
-
-
-#section-presentacion{
     min-height: 100%;
-    background: url(../images/background/bg2_1080p.png) rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-position: center;
+    background: url(../images/background/bg2.jpg) rgba(0, 0, 0, 0.5);
+    background-size: contain;
     background-blend-mode: multiply;
-    background-attachment: fixed;
+
 }
 
 .background-image {
     position: relative; /* Asegura que el contenido superpuesto esté posicionado correctamente */
 }
 
-.color-pw-1{
-    color: #ea2d66 !important;
-}
-.color-pw-2{
-    color: #2566ca !important
-}
-
-.svg-image {
-    width: 70px;
-    height: auto;
-    transition: transform 0.5s; 
-}
-
-.svg-image-45 {
-    width: 45px;
-    height: auto;
-    transition: transform 0.5s; 
-}
-
-
-.svg-image:hover img {
-    transform: scale(1.03);
-}
-
-/* Sombreado del contnedor div de portafolios un poco mas resaltado  */
-.svg-image:hover{
-    box-shadow: 0 .2rem .3rem rgba(0,0,0,.5)!important
-}
-
-
-.btn-close{
-    font-size: 25px !important;
-}
-
-.close {
-    color: #fff; 
-    opacity: 1;
-}
-
-
-.card-skill{
-    max-width: 100px;
-}
-
-.svg-container {
-    width: 100px; /* Ajusta el ancho según sea necesario */
-    height: 100px; /* Ajusta la altura según sea necesario */
-}
-
-
-.typed-cursor{
-    color: white !important;
-}
 .background-image::before {
     content: ''; /* Obligatorio para que el pseudo-elemento sea visible */
     position: absolute; /* Permite posicionar el pseudo-elemento sobre la imagen de fondo */
@@ -129,30 +61,39 @@ p, ul {
 } */
 
 
-
+:root {
+    --fs-sm: 14px; /* Tamaño de fuente pequeño */
+    --fs-md: 16px; /* Tamaño de fuente mediano */
+    --fs-lg: 18px; /* Tamaño de fuente grande */
+    --fs-xl: 20px; /* Tamaño de fuente extra grande */
+}
 
 .title{
     font-family: 'Grotesk';
     color: white;
     font-weight: 800;
-    font-size: calc(4.8rem + 0.5vw) !important;
+    font-size: calc(5rem + 0.5vw) !important;
 }
 
-
+p, ul {
+    color: white;
+    font-size: calc(0.7rem + 0.5vw) !important;
+}
 
 #typed-container-1,
 #typed-container-2,
 #typed-container-3{
     display: inline-block;
     color: white !important;
-    font-size: calc(1.4rem + 0.5vw) !important;
+    font-size: calc(1rem + 0.5vw) !important;
 }
 
 .vh-75{
     height: 75vh;
 }
 .modal-fullscreen-image {
-    max-height: 75vh;
+    /* max-height: 75vh; */
+    max-height: 70vh;
     background: #dee2e6;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -283,7 +224,6 @@ p, ul {
 
 /* Boton Bootstrap personalizado  */
     .btn-style1{
-        border: 1px solid white;
         border-radius: 0px !important;
         box-shadow: 0 0 3px rgba(0,0,0,0.5);
     }
@@ -337,9 +277,7 @@ p, ul {
 }
 
 
-.h-overflow{
-    overflow: hidden !important;
-}
+
 /* Animacion de escalado a las imagenes de cada elemento del portafolio  */
 .card {
     overflow: hidden;

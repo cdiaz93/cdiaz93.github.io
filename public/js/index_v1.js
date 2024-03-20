@@ -1,15 +1,8 @@
 //Inicializar FancyBox Image
-// Fancybox.bind("[data-fancybox]", {});
+Fancybox.bind("[data-fancybox]", {});
 
 
-new WOW().init();
 
-
-// Inicializar Tooltip de Bootstrap 5 
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
 
 
 //------------------------------------------------
@@ -18,26 +11,34 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 // Texto que se usara con typedJS
 
 
-var parrafo1= [
-    "Desarrollador web, con experiencia en la creación de interfaces digitales atractivas y funcionales."
-];
-var parrafo2= [
-    "En mi profesión, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
-];
-
-var parrafoCompleto =[
-    "Desarrollador web, con experiencia en la creación de interfaces digitales atractivas y funcionales. <br><br>"+
-    "En mi profesión, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
+var textoCompleto  = [
+    "Un apasionado diseñador web con experiencia en la creación de interfaces digitales atractivas y funcionales. "+
+    "Durante mi trayectoria profesional, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole.", 
+    "Mis habilidades incluyen trabajar con una variedad de tecnologías web, incluyendo HTML, CSS, JavaScript, PHP y los stacks MERN y MEVN. " +
+    "Tambien, he demostrado mis habilidades en la creación de macros en Excel para la automatización de procesos.",
+    "Te invito a explorar mi portafolio, donde encontrarás algunos trabajos en los que he participado.",
 ];
 
-var habilidades =[
-    "Fronted",
-    "Backend",
-    "Bases Datos",
-    "Otros",
-]
+var textoCompleto2  = [
+    "Un apasionado diseñador web con experiencia en la creación de interfaces digitales atractivas y funcionales. "+
+    "Durante mi trayectoria profesional, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole. <br>"+
+    "Mis habilidades incluyen trabajar con una variedad de tecnologías web, incluyendo HTML, CSS, JavaScript, PHP y los stacks MERN y MEVN. " +
+    "Tambien, he demostrado mis habilidades en la creación de macros en Excel para la automatización de procesos. <br></br>"+
+    "Te invito a explorar mi portafolio, donde encontrarás algunos trabajos en los que he participado."
+];
 
+var textoCompleto3  = [
+    "Hola, Soy un apasionado diseñador web con experiencia en la creación de interfaces digitales atractivas y funcionales. "+
+    "Durante mi trayectoria profesional, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole. <br></br>"+
+    "Te invito a explorar mi portafolio, donde encontrarás algunos trabajos en los que he participado."
+];
 
+// var textoCompleto2  = [
+//     "Soy un apasionado diseñador web con experiencia en la creación de interfaces digitales atractivas y funcionales. <br><br>"+
+//     "Durante mi trayectoria profesional he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole, " +
+//     "usando tecnologías web como HTML, CSS, JavaScript, PHP, los stacks MERN y MEVN, y Macros de Excel. <br></br>"+
+//     "Te invito a explorar mi portafolio, donde encontrarás algunos trabajos en los que he participado."
+// ];
 
 
 
@@ -53,89 +54,19 @@ function eliminarCursor(){
 }
 
 //Usar typeJs para mostar 'textoCompleto' en secuencia. en el tag con id="typed-container"
-// const typed = new Typed('#typed-container-1', {
-//     strings: parrafo1,
-//     typeSpeed: 30,
-//     backSpeed: 1,
-//     startDelay: 2500, //Milisegundos
-//     onComplete: function() {
-//         if (!verPortafolioClicked) {
-//             const typed2 = new Typed('#typed-container-2', {
-//                 strings: parrafo2,
-//                 typeSpeed: 30,
-//                 backSpeed: 1,
-//                 startDelay: 0, //Milisegundos
-//                 onComplete: function() {
-//                     if (!verPortafolioClicked) {
-//                         animacionHabilidades();
-//                         animacionesPagina();
-//                     }
-//                 } 
-//             });
-//         }
-//     } 
-// });
-
 const typed = new Typed('#typed-container-1', {
-    strings: parrafoCompleto,
-    typeSpeed: 20,
+    strings: textoCompleto2,
+    typeSpeed: 30,
     backSpeed: 1,
-    startDelay: 2000, //Milisegundos
+    startDelay: 1500, //Milisegundos
     onComplete: function() {
         if (!verPortafolioClicked) {
-            // animacionHabilidades();
             animacionesPagina();
         }
     } 
 });
 
 
-
-
-  
-// Llama a la función cuando se carga la página y cuando se desplaza la ventana
-// document.addEventListener('DOMContentLoaded', textoHabilidadesTyped);
-// window.addEventListener('scroll', textoHabilidadesTyped);
-
-
-// // Función para verificar si el elemento está en la pantalla
-// function ubicacionScroll(el) {
-//     var rect = el.getBoundingClientRect();
-//     console.log(rect);
-//     return (
-//       rect.top <= 300 && 
-//       rect.top >= -100 &&
-//       rect.left >= 0
-//     );
-// }
-  
-// // Función para activar Typed.js cuando la sección Habilidades está en pantalla
-// var repetir =0
-// function textoHabilidadesTyped() {
-//     var sectionHabilidades = document.getElementById('section-habilidades');
-//     if (ubicacionScroll(sectionHabilidades)) {
-//         console.log(habilidades.length);
-//         for(let i=0; i<habilidades.length; i++){
-//             if(repetir===0){
-//                 setTimeout(() => {
-//                     var texto = habilidades[i];
-//                     var options = {
-//                         strings: [texto],
-//                         typeSpeed: 50,
-//                     };
-//                     const typedxd = new Typed('#titulo-habilidad-'+i, options);
-//                     const skills = document.getElementById("habilidades-"+i);
-//                     skills.classList.add("animate__animated", "animate__zoomIn", "animate__delay-1s");
-//                     skills.classList.remove("d-none");
-                
-
-//                 }, i * 700); 
-//             }
-//         }
-//         repetir=repetir+1;
-        
-//     }
-// }
 
 
 
@@ -167,35 +98,11 @@ document.addEventListener("DOMContentLoaded", function() {
     botonScroll.addEventListener("click", animacionesPagina);
 });
 
-function desplazarseHacia(id){
-    section = document.getElementById(id);
+function desplazarseAlPortafolio(){
+    section = document.getElementById("contenido_portafolio");
     section.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-
-//Animaciones para el apartado de las Skills en la presentación
-function animacionHabilidades(){
-
- 
-
-    const num = 5
-
-    for(let a=1; a <= num; a++){
-
-        
-        setTimeout(() => {
-            const skills = document.getElementById("skill-"+a);
-            skills.classList.add("animate__animated", "animate__bounceInUp");
-            skills.classList.remove("d-none");
-        }, a * 500); 
-
-    }
-
-    titulo = document.getElementById("titulo_habildiades");
-    titulo.classList.add("animate__animated", "animate__backInRight");
-    titulo.classList.remove("d-none");
-
-}
 
 //Elimina todas las class que se usan para activar animaciones de Animate.css
 function eliminarAnimaciones(){
@@ -234,7 +141,6 @@ function animacionesPagina() {
     var contenedorPortafolio;
     var presentacion;
     var cursor 
-    var bienvenido;
 
     // -----------------------------------------------------------------------------------
     // NOTA: 'verPortafolioClicked' se usa para determinar si se omitio la presentacion
@@ -261,7 +167,7 @@ function animacionesPagina() {
     setTimeout(function() {
         if(verPortafolioClicked){
             presentacion.classList.add("d-none");
-            presentacion2.innerHTML  = parrafoCompleto;
+            presentacion2.innerHTML  = textoCompleto2;
             presentacion.classList.remove("animate__animated", "animate__bounceOut");
             presentacion2.classList.add("animate__animated", "animate__bounceIn");
         }
@@ -280,25 +186,17 @@ function animacionesPagina() {
         dowmArrow = document.getElementById("down_arrow");
         dowmArrow.classList.remove('d-none');
 
-        bienvenido = document.getElementById("title_welcome");
-        bienvenido.classList.remove('d-none');
-
-
-        document.body.classList.remove("h-overflow");
-
         // Hace visible la seccion del portafolio 
         section = document.getElementById("contenido_portafolio");
         section.classList.remove('d-none');
 
         presentacion = document.getElementById("section-presentacion");
-        // presentacion.classList.remove('vh-100');
+        presentacion.classList.remove('vh-100');
 
         if(!verPortafolioClicked){
-            bienvenido.classList.add("animate__animated", "animate__fadeInUpBig");
-            dowmArrow.classList.add("animate__animated", "animate__zoomIn", "animate__slow");
+            dowmArrow.className += (" animate__animated animate__backInUp animate__slow");
         }else{
-            bienvenido.classList.add("animate__animated", "animate__backInUp");
-            dowmArrow.classList.add("animate__animated", "animate__backInUp");
+            dowmArrow.className += (" animate__animated animate__backInUp");
         }
     }, tiempo*2);
 
