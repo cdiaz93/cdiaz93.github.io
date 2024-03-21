@@ -31,7 +31,7 @@
     .btn-style1{ font-size: 12px !important }
     p, ul {
         color: black;
-        font-size: calc(0.9rem + 0.5vh) !important;
+        font-size: calc(0.7rem + 0.5vh) !important;
     }
 }
 
@@ -42,7 +42,7 @@
     .btn-style1{ font-size: 12px !important }
     p, ul {
         color: black;
-        font-size: calc(0.9rem + 0.5vh) !important;
+        font-size: calc(0.7rem + 0.5vh) !important;
     }
 }
 
