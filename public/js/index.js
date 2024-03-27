@@ -4,6 +4,38 @@
 
 // new WOW().init();
 
+$(window).load(function() {
+    $(".loader").fadeOut("slow");
+    $(".titulo_nombre").addClass(" animate__animated animate__bounceInDown animate__delay-1s");
+
+    const typed = new Typed('#typed-container-1', {
+        strings: parrafoCompleto,
+        typeSpeed: 30,
+        backSpeed: 1,
+        startDelay: 2000, //Milisegundos
+        onComplete: function() {
+            if (!verPortafolioClicked) {
+                animacionesPagina();
+            }
+        } 
+    });
+    
+    
+});
+
+
+
+var primerElemento = document.querySelector("ol.carousel_list > li");
+
+// Seleccionar todos los elementos <li> dentro del <ol> con la clase "carousel_list"
+var elementosLi = document.querySelectorAll("ol.carousel_list > li");
+
+// Iterar sobre todos los elementos <li> excepto el primero
+for (var i = 1; i < elementosLi.length; i++) {
+    // Eliminar cada elemento <li> excepto el primero
+    elementosLi[i].parentNode.removeChild(elementosLi[i]);
+}
+
 
 // Inicializar Tooltip de Bootstrap 5 
 var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
@@ -22,12 +54,12 @@ var parrafo1= [
     "Desarrollador web, con experiencia en la creación de interfaces digitales atractivas y funcionales."
 ];
 var parrafo2= [
-    "En mi profesión, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
+    "He contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
 ];
 
 var parrafoCompleto =[
     "Desarrollador web, con experiencia en la creación de interfaces digitales atractivas y funcionales. <br><br>"+
-    "En mi profesión, he contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
+    "He contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
 ];
 
 var habilidades =[
@@ -48,17 +80,7 @@ function eliminarCursor(){
     }
 }
 
-const typed = new Typed('#typed-container-1', {
-    strings: parrafoCompleto,
-    typeSpeed: 20,
-    backSpeed: 1,
-    startDelay: 2000, //Milisegundos
-    onComplete: function() {
-        if (!verPortafolioClicked) {
-            animacionesPagina();
-        }
-    } 
-});
+
 
 
 
@@ -125,6 +147,7 @@ function animacionesPagina() {
     var bienvenido;
     var habilidades;
     var titulo_habilidades;
+    var footer;
 
     // -----------------------------------------------------------------------------------
     // NOTA: 'verPortafolioClicked' se usa para determinar si se omitio la presentacion
@@ -132,7 +155,6 @@ function animacionesPagina() {
 
     // 1. Desaparece el boton de ver portafoilio y realiza animacion de salida
     presentacion = document.getElementById("typed-container-1");
-    presentacion2 = document.getElementById("typed-container-2");
     btnPortafolio = document.getElementById("ver_portafolio");
 
  
@@ -149,7 +171,6 @@ function animacionesPagina() {
     }, 0);
 
     // 2. Hace visible y realiza animacion de entrada para los botones de network_options (Github, CV)
-
     setTimeout(function() {
         if(verPortafolioClicked){
             presentacion.classList.add("d-none");
@@ -161,7 +182,7 @@ function animacionesPagina() {
         netwok = document.getElementById("network_options");
         netwok.classList.remove('d-none');
         if(!verPortafolioClicked){
-            netwok.className += (" animate__animated animate__backInLeft animate__slow");
+            netwok.className += (" animate__animated animate__backInLeft");
         }else{
             netwok.className += (" animate__animated animate__backInLeft");
         }
@@ -175,7 +196,7 @@ function animacionesPagina() {
         // bienvenido = document.getElementById("title_welcome");
         // bienvenido.classList.remove('d-none');
 
-        document.body.classList.remove("h-overflow");
+        // document.body.classList.remove("h-overflow");
 
 
         // Verificar si el elemento habilidades es visible en la pantalla
@@ -188,9 +209,12 @@ function animacionesPagina() {
         }
  
 
-        // Hace visible la seccion de habilidades y portafolio 
+        // Hace visible la seccion de habilidades, portafolio y footer
         section = document.getElementById("contenido_portafolio");
         section.classList.remove('d-none');
+
+        footer = document.getElementById("footer");
+        footer.classList.remove('d-none');
       
         
 
@@ -199,7 +223,7 @@ function animacionesPagina() {
 
         if(!verPortafolioClicked){
             // bienvenido.classList.add("animate__animated", "animate__fadeInUpBig");
-            dowmArrow.classList.add("animate__animated", "animate__zoomIn", "animate__slow");
+            dowmArrow.classList.add("animate__animated", "animate__zoomIn");
 
         }else{
             // bienvenido.classList.add("animate__animated", "animate__backInUp");

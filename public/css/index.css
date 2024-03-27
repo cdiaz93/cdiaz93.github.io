@@ -105,6 +105,13 @@ body{
     --fs-xl: 20px; /* Tamaño de fuente extra grande */
 }
 
+.footer-dark{
+    background-color: black !important;
+}
+
+.footer-black div span {
+    color: #ffffff !important;
+}
 .mt-50{ margin-top: 50px }
 .mt-60{ margin-top: 60px }
 .mt-70{ margin-top: 70px }
@@ -113,6 +120,33 @@ body{
 .min-vh-100{
     min-height: 100vh;
 }
+
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    /* background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249); */
+    background:  rgb(0, 0, 0);
+    opacity: 1;
+}
+
+.row-loader{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    height: 100vh;
+}
+
+#lottie-container {
+    width: 300px; 
+    height: 300px; 
+}
+
 
 #section-presentacion{
     min-height: 100%;
@@ -133,6 +167,11 @@ body{
 .color-pw-2{
     color: #2566ca !important
 }
+.color-pw-3{
+    color: #5fa2dc !important
+}
+
+
 
 .svg-image {
     width: 70px;
@@ -177,9 +216,6 @@ body{
 }
 
 
-.typed-cursor{
-    color: white !important;
-}
 .background-image::before {
     content: ''; /* Obligatorio para que el pseudo-elemento sea visible */
     position: absolute; /* Permite posicionar el pseudo-elemento sobre la imagen de fondo */
@@ -203,7 +239,11 @@ body{
 #typed-container-1,
 #typed-container-2,
 #typed-container-3{
-    display: inline-block;
+    display: inline;            /**Importante, para que el typed-cursor no haga saltos de linea al terminar la fila de animacion de escritura  */
+    color: white !important;
+}
+
+.typed-cursor{
     color: white !important;
 }
 
@@ -399,6 +439,10 @@ body{
 .h-overflow{
     overflow: hidden !important;
 }
+.auto-overflow{
+    overflow: visible !important;
+}
+
 /* Animacion de escalado a las imagenes de cada elemento del portafolio  */
 .card {
     overflow: hidden;
@@ -427,3 +471,75 @@ body{
 .no-scrollbar{
     scrollbar-width: none !important;
 }
+
+
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+}
+  
+.play-icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+  
+/* Ajusta el tamaño del ícono de reproducción según tus necesidades */
+.bi-youtube {
+    font-size: 5em;
+    color: #ff0000; /* Puedes cambiar el color según tu preferencia */
+ }
+  
+/* Cambia el color del borde cuando el cursor está sobre la imagen */
+.image-link:hover .image-container img {
+    border: 2px solid #ff0000; /* Cambia el color del borde según tu preferencia */
+}
+
+
+
+
+/* Boton Bootstrap personalizado (Linked In)  */
+    .btn-linked {
+        color: #fff;
+        background-color: #198754;
+        border-color: #198754;
+    }
+
+    .btn-linked:hover {
+        color: #fff;
+        background-color: #146c43;
+        border-color: #11653e;
+    }
+  
+    .btn-linked:focus,
+    .btn-linked.focus {
+        color: #fff;
+        background-color: #146c43;
+        border-color: #11653e;
+        box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.5);
+    }
+  
+    .btn-linked.disabled,
+    .btn-linked:disabled {
+        color: #fff;
+        background-color: #198754;
+        border-color: #198754;
+    }
+  
+    .btn-linked:not(:disabled):not(.disabled):active,
+    .btn-linked:not(:disabled):not(.disabled).active,
+    .show > .btn-linked.dropdown-toggle {
+        color: #fff;
+        background-color: #11653e;
+        border-color: #0d5f3e;
+    }
+  
+    .btn-linked:not(:disabled):not(.disabled):active:focus,
+    .btn-linked:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-linked.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.5);
+    }
+/* -------------------------------------------------------------  */

@@ -34,19 +34,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
 
-
-    <style>
-
-        
-        
-      </style>
 </head>
 
-<body data-new-gr-c-s-check-loaded="14.1123.0" data-gr-ext-installed="" class="h-overflowxd">
+<body data-new-gr-c-s-check-loaded="14.1123.0">
+
+
+    <!-- Pantalla de carga  -->
+    <div id="loader" class="loader">
+        <div class="row-loader">
+            <div id="lottie-container" class="text-center"></div>
+            <div class="col-12 text-center"> <h1 class="fw-bold color-pw-3"> Preparando el escenario... </h1></div>
+        </div>
+    </div>
 
     
     <main>
-        <section id="section-presentacion" class="text-center vh-100 position-relative">
+        <section id="section-presentacion" class="text-center vh-100 position-relative auto-overflow">
 
          
             <div id="div_ver_portafolio" class="col-12 d-flex justify-content-end">
@@ -58,7 +61,7 @@
                     
                     <!-- Presentacion  -->
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 px-4 text-start">
-                        <h1 class="title animate__animated animate__bounceInDown animate__delay-1s"> Hola soy  <b class="color-pw-1"> Carlos Diaz </b></h1> 
+                        <h1 class="titulo_nombre title"> Hola soy  <b class="color-pw-1"> Carlos Diaz </b></h1> 
                     </div>
                     
                     <!-- Presentacion sobre MI  -->
@@ -68,17 +71,27 @@
                 </div>
 
                 <!-- Network  -->
-                <div class="row">
-                    <div id="network_options" class="col-12 d-none my-2">
-                        <div class="d-grid gap-2">
-                            <a href="https://github.com/cdiaz93" target="_blank" class="btn btn-dark btn-style1 col-5 col-sm-5 col-md-4 col-lg-3" data-wow-duration="2s" data-wow-delay="5s"> 
+                <div id="network_options" class="row d-none mt-2 mt-sm-3 mt-md-4 mt-lg-4 mt-xl-5">
+
+                    <div class="row px-4 my-2">
+                    
+                        <div class="col-8 col-sm-4 col-md-3 col-lg-3 col-xl-2 my-1">
+                            <a href="https://github.com/cdiaz93" target="_blank" class="btn btn-outline-dark btn-style1 text-white col-12" data-wow-duration="2s" data-wow-delay="5s"> 
                                 <i class="bi bi-github"></i> Github 
                             </a>
-                            <a href="public/HV_CD_2024.pdf" target="_blank" class="btn btn-primary btn-style1 col-5 col-sm-5 col-md-4 col-lg-3"> 
+                        </div>
+                        <div class="col-8 col-sm-4 col-md-3 col-lg-3 col-xl-2 my-1">
+                            <a href="public/HV_CD_2024.pdf" target="_blank" class="btn btn-outline-secondary btn-style1 text-white col-12"> 
                                 <i class="bi bi-file-earmark-person-fill"></i> Currículum 
                             </a>
                         </div>
+                        <div class="col-8 col-sm-4 col-md-3 col-lg-3 col-xl-2 my-1">
+                            <a href="public/HV_CD_2024.pdf" target="_blank" class="btn btn-outline-primary btn-style1 text-white col-12"> 
+                                <i class="bi bi-linkedin"></i> LinkdeIn 
+                            </a>
+                        </div>
                     </div>
+                     
                 </div>
             </div>
 
@@ -100,21 +113,22 @@
 
                 <div class="col-12 col-sm-12 col-md-12 col-lg-12">
 
-                        <div id="titulo-habilidades" class="col-12 col-sm-12 col-md-12 col-lg-12 pt-3 wow animate__animated animate__bounceInDown">
+                        <div id="titulo-habilidades" class="col-12 col-sm-12 col-md-12 col-lg-12 pt-3 px-3 wow animate__animated animate__bounceInDown">
                             <h1 class="text-center d-none  d-md-block"> <b class="color-pw-2"> MIS HABILIDADES </b></h1> 
                             <h2 class="text-center d-block d-sm-block d-md-none"> <b class="color-pw-2"> MIS HABILIDADES </b></h2> 
-                            <p class="text-center"> 
-                                Manejo una amplia variedad de tecnologias para el desarrollo web, 
-                                como tambien para la creación de Macros de excel para la automatización de teras.  
+                            <p class="text-left"> 
+                                Manejo una variedad de tecnologias para el desarrollo web, 
+                                como tambien para la creación de macros de excel para automatizar tareas.  
                             </p>
                         </div>
                         
 
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-12 px-3">
                             <div class="row my-4 wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.5s">
                                 <div class="col-5 col-sm-5 col-md-3 col-lg-3  d-flex align-items-center justify-content-left justify-content-md-end"> 
-                                    <h2 class="fw-bold d-none d-md-block">Fronted</h2>
-                                    <h5 class="fw-bold d-block d-sm-none">Fronted </h5>
+                                    <h2 class="fw-bold d-none d-sm-none d-md-block">Fronted</h2>
+                                    <h3 class="fw-bold d-none d-md-none d-sm-block">Fronted</h3>
+                                    <h4 class="fw-bold d-block d-sm-none">Fronted </h4>
                                 </div>
                                 <div class="col-7 col-sm-7 col-md-9 col-lg-9">
                                     <div  class="row row-cols-3 row-cols-sm-3 row-cols-md-6 row-cols-lg-6">
@@ -142,8 +156,9 @@
 
                             <div class="row my-4 wow animate__animated animate__fadeInLeftBig" data-wow-delay="0.8s">
                                 <div class="col-5 col-sm-5 col-md-3 col-lg-3 d-flex align-items-center justify-content-left justify-content-md-end"> 
-                                    <h2 class="fw-bold d-none d-md-block">Backend</h2>
-                                    <h5 class="fw-bold d-block d-sm-none">Backend </h5>
+                                    <h2 class="fw-bold d-none d-sm-none d-md-block"> Backend </h2>
+                                    <h3 class="fw-bold d-none d-md-none d-sm-block"> Backend </h3>
+                                    <h4 class="fw-bold d-block d-sm-none"> Backend </h4>
                                 </div>
                                 <div class="col-7 col-sm-7 col-md-9 col-lg-9">
                                     <div  class="row row-cols-3 row-cols-sm-3 row-cols-md-6 row-cols-lg-6">
@@ -162,17 +177,16 @@
                                         <div class="col my-1">
                                             <img src="public/images/logos/svg/python.svg" class="img-fluid img-thumbnail svg-image" alt="python" data-bs-toggle="tooltip" data-bs-placement="top" title="Python">
                                         </div>
-                                        <div class="col my-1">
-                                            <img src="public/images/logos/svg/android.svg" class="img-fluid img-thumbnail svg-image" alt="Android" data-bs-toggle="tooltip" data-bs-placement="top" title="Android-Java">
-                                        </div>
+                                        
                                     </div>
                                 </div>
                             </div>
 
                             <div class="row my-4 wow animate__animated animate__fadeInLeftBig" data-wow-delay="1.1s">
                                 <div class="col-5 col-sm-5 col-md-3 col-lg-3  d-flex align-items-center justify-content-left justify-content-md-end"> 
-                                    <h2 class="fw-bold d-none d-md-block">Bases Datos</h2>
-                                    <h5 class="fw-bold d-block d-sm-none">Bases Datos </h5>
+                                    <h2 class="fw-bold d-none d-sm-none d-md-block"> Bases Datos </h2>
+                                    <h3 class="fw-bold d-none d-md-none d-sm-block"> Bases Datos </h3>
+                                    <h4 class="fw-bold d-block d-sm-none"> Bases Datos </h4>
                                 </div>
                                 <div class="col-7 col-sm-7 col-md-9 col-lg-9">
                                     <div class="row row-cols-3 row-cols-sm-3 row-cols-md-6 row-cols-lg-6">
@@ -191,8 +205,9 @@
 
                             <div class="row my-4 wow animate__animated animate__fadeInLeftBig" data-wow-delay="1.4s">
                                 <div class="col-5 col-sm-5 col-md-3 col-lg-3 d-flex align-items-center justify-content-left justify-content-md-end"> 
-                                    <h2 class="fw-bold d-none d-md-block">Otros</h2>
-                                    <h5 class="fw-bold d-block d-sm-none">Otros </h5>
+                                    <h2 class="fw-bold d-none d-sm-none d-md-block"> Otros </h2>
+                                    <h3 class="fw-bold d-none d-md-none d-sm-block"> Otros </h3>
+                                    <h4 class="fw-bold d-block d-sm-none"> Otros </h4>
                                 </div>
                                 <div class="col-7 col-sm-7 col-md-9 col-lg-9">
                                     <div class="row row-cols-3 row-cols-sm-3 row-cols-md-6 row-cols-lg-6">
@@ -209,10 +224,7 @@
                                             <img src="public/images/logos/svg/vba.svg" class="img-fluid img-thumbnail svg-image" alt="VBA For Applications" data-bs-toggle="tooltip" data-bs-placement="top" title="Visual Basic For Applications">
                                         </div>
                                         <div class="col my-1">
-                                            <img src="public/images/logos/svg/excel.svg" class="img-fluid img-thumbnail svg-image" alt="Excel" data-bs-toggle="tooltip" data-bs-placement="top" title="Excel Avanzado">
-                                        </div>
-                                        <div class="col my-1">
-                                            <img src="public/images/logos/svg/powerpoint.svg" class="img-fluid img-thumbnail svg-image" alt="PowerPoint" data-bs-toggle="tooltip" data-bs-placement="top" title="PowerPoint Avanzado">
+                                            <img src="public/images/logos/svg/ms-office.svg" class="img-fluid img-thumbnail svg-image" alt="Excel" data-bs-toggle="tooltip" data-bs-placement="top" title="MS Office: Word, Excel, PowerPoint Avanzado">
                                         </div>
                                     </div>
                                 </div>
@@ -220,12 +232,10 @@
                         </div>
                 </div>
             </div>
-
         </section>
 
-        
-
-        <div id="contenido_portafolio" class="album mt-60 bg-light min-vh-100 d-none">
+    
+        <div id="contenido_portafolio" class="album mt-60 bg-light min-vh-100 d-none pb-5">
             <div class="container">
 
                 <div class="row pb-5 pt-3">
@@ -415,9 +425,10 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/EZ1TKqi7zug?si=qupJPTp-zUZ1Zshl" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k6e3Kd7BLOGV3VAm29G?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
-                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen
+                                                                        sandbox="allow-same-origin allow-scripts allow-popups">
                                                                     </iframe>
                                                                 </div>
                                                             </div>
@@ -471,7 +482,7 @@
 
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     Pagina web informativa. <br>
                                                                     Capibox ofrece servicio de casillero virtual, para que sus clientes puedan realizar compras 
                                                                     online. Tienen casilleros con ubicación fisica en EE.UU para recibir el/los productos, y enviarlos al pais de destino final (Colombia).
@@ -494,7 +505,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/sL1gyM-hW4A?si=TIPnze4ah18r0R_W" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k7npQzlamASrIOAm3rY?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -546,21 +557,21 @@
 
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
-                                                                    Pagina web informativa. <br>
+                                                                <p class="p-3">
+                                                                    Pagina web informativa.
                                                                     Chorreras de perico es un centro de recreación que ofrece servicios de hospedaje, restaurante y alquiler 
-                                                                    de espacios para la celebración de eventos especiales.
+                                                                    de espacios para celebraciónes.
                                                                     <br> <br>
-                                                                    La pagina original (Versión 1) fue desarrollada en 2018. El trabajo que realice (Año 2023) consistio en hacer algunas modificaciones de diseño a la pagina, 
-                                                                    ademas se agrego nueva información.
+                                                                    La versión original fue desarrollada en 2018. El trabajo que realice (Año 2023) consistio en hacer algunas modificaciones en el diseño ya existente 
+                                                                    de la pagina, ademas se agrego nueva información.
                                                                     <br><br>
                                                                     El trabajo fue realizado para la empresa <a class="text-decoration-none" href="http://sagazsas.com/" target="_blank">Sagaz sas</a>, y los 
                                                                     derechos de autor de la pagina le corresponden a dicha empresa.
                                                                 </br>
                                                                 </p>
 
-                                                                <div class="col-md-12 my-4">
-                                                                    <div class="py-3">Estas viendo: <b class="version-text"> Versión Modificada </b></div>
+                                                                <div class="col-md-12 mb-4 px-3">
+                                                                    <div class="pb-2"> <p> Estas viendo:  <b class="version-text"> Versión Modificada </b> </p></div>
                                                                     <button type="button" class="btn btn-outline-primary d-inline my-1" onclick="cambiarVersion(1)"> V. Original </button>
                                                                     <button type="button" class="btn btn-outline-primary d-inline my-1" onclick="cambiarVersion(2)"> V. Modificada</button>
                                                                 </div>
@@ -582,7 +593,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/d9tUjUUqE8A?si=F5B40-VcvqvXdB3U" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/kfGwmE3KQFf01TAm29w?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -636,7 +647,7 @@
 
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     Aplicativo web desarrollado con el stack MEVN.
                                                                     Se desarrollo en un grupo conformado por 2 personas, como el proyecto final para uno de los cursos (Desarrollo Stack MEVN) perteneciente 
                                                                     al programa de formación virtual <b> MISION TIC 2021</b>. <br><br>
@@ -657,7 +668,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/BLGs0_rWxGo?si=z_GkTPh7yKvfxtgk" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k7Aaf7MVyRGh1qAm29A?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -715,7 +726,7 @@
 
                                                         <div class="row">
                                                             <div  class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     Aplicativo web desarrollado con el stack MERN. 
                                                                     Es un proyecto que desarrollé para aplicar los conocimientos adquiridos sobre el stack en
                                                                     el programa de formación virtual <b> MISION TIC 2021</b>.
@@ -732,7 +743,7 @@
 
                                                             <!-- Pagina web Fullscreen  -->
                                                             <div class="col-md-6 overflow-auto modal-fullscreen-image"> 
-                                                                <img src="public/images/pagina_competa/cinema_MERN.png" class="img-fluid" alt="spa_akemi_fullscreen">
+                                                                <img src="public/images/pagina_competa/cinema_MERN.png" class="img-fluid" alt="cinema_fullscreen">
                                                             </div>
                                                         </div>
                                                     </div>
@@ -741,7 +752,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/xwqoBZtnr_I?si=yW-1L0JpcFfUrspX" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k3GJXuc1bDos8NAlZaA?quality=1080&queue-autoplay-next=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -795,7 +806,7 @@
 
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     Consiste en una aplicación para almacenar información de prescripciones medicas, con el fin de poder disponer de estas
                                                                     para análisis y/o generación de informes. <br>
                                                                     Un representante medico es el encargado de registar prescripciones medicas en el sistema, este documento tiene relacionado productos de la compañía a la que 
@@ -818,7 +829,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/BOOc32lH1_A?si=XrGm88IkvHxFuo5u" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k5qdCfZarP6LqMAm29E?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -872,7 +883,7 @@
                                                     <div class="tab-pane active" id="info-7">
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     La plataforma fue diseñada para gestionar los riesgos e incidentes de seguridad relacionados 
                                                                     con terceros dentro de la compañia. <br><br>
                                                                     <b> Riesgos:</b>  Facilita la creación de informes detallados que abarcan tanto los riesgos identificados como aquellos que se han materializado y demandan una acción inmediata. 
@@ -896,7 +907,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/Ot4m9RdLpeI?si=H2uInguh-UnHnG6i" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k7wsbfXTw2Hyz3Am29C?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -950,7 +961,7 @@
 
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     Es un aplicativo e-commerce basico desarrollado con laravel 10. Se puede gestionar todo 
                                                                     el funcionamiento de la pagina web mediante un panel administrativo.<br><br>
                                                                     La página cuenta con un carrito de compras para poder acumular todos los artículos que vaya a comprar el cliente.
@@ -967,7 +978,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/iS-vu0jXS1E?si=_57GCjNnS5jDRu6z" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k5XQMFX9w3baWkAm29I?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -1020,7 +1031,7 @@
 
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     Tiene como objetivo establecer un control en la gestión de perfiles de cargos, así como en la elaboración de
                                                                     informes de selección para los candidatos que aspiran a ocupar dichos cargos, y en la gestión de retiros de personal. 
                                                                     Cuenta con roles, entre los que se incluye el rol de ADMIN, así como otros roles por Zonas. El admin tiene control absoluto de la macro, los 
@@ -1043,7 +1054,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/XgC1ZYPcpKI?si=SpnAaYBAnxFt7DDv" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k2S35NDQvbKoHpAm29K?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -1095,7 +1106,7 @@
 
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     Esta macro automatiza la generación de varios informes (9 en total), que se utilizan en el area de: Seguridad, Salud en el Trabajo y de Gestión Ambiental
                                                                     de la empresa que contrato el servicio. 
                                                                     <br><br>
@@ -1117,7 +1128,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/jKG1kL7xgOA?si=KHbptSLnNq069NmN" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/k44U1lEDrBqvrYAm29y?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -1168,7 +1179,7 @@
 
                                                         <div class="row">
                                                             <div class="col-md-6 pt-4">
-                                                                <p>
+                                                                <p class="p-3">
                                                                     Esta macro se utiliza para poder pegar tablas de informes en una presentación Power Point.
                                                                     <br>
                                                                     Cuenta con dos hojas donde se parametriza la información necesaria para su funcionamiento, entre las cuales se le asigna el excel de donde sacara la información, las hojas, 
@@ -1192,7 +1203,7 @@
                                                         <div class="row">
                                                             <div class="col-md-8 my-5 offset-md-2">
                                                                 <div class="ratio ratio-16x9">
-                                                                    <iframe src="https://www.youtube.com/embed/-vhgtj_yhEo?si=6t9cQwd8mK9eTrKX" loading="lazy"
+                                                                    <iframe src="https://www.dailymotion.com/embed/video/kLgIMSzC7kOMIsAm29M?quality=1080&queue-autoplay-next=0&sharing-enable=0" loading="lazy"
                                                                         width="560" height="315" title="YouTube video player" frameborder="0" 
                                                                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                                                                     </iframe>
@@ -1218,7 +1229,34 @@
         </div>
 
 
+        <div id="footer" class="containex footer-dark">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 border-top">
+                <div class="col-12 col-sm-12 col-md-6 d-flex justify-content-center align-items-center">
+                    <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+                    </a>
+                    <span class="mb-3 mb-md-0 text-white">© 2024 Carlos Diaz, Todos los derechos reservados.</span>
+                </div>
+      
+                <ul class="nav col-12 col-sm-12 col-md-6 justify-content-center list-unstyled d-flex">
+                    <li class="ms-3">
+                        <a class="text-white" href="#"> <i class="bi bi-github fs-3"></i>  </a>
+                    </li>
+                    <li class="ms-3"><a class="text-white" href="#">
+                        <a class="text-white" href="#"> <i class="bi bi-file-earmark-person-fill fs-3"></i> </a>
+                    </li>
+                    <li class="ms-3">
+                        <a class="text-white" href="#"> <i class="bi bi-linkedin fs-3"></i> </a>
+                    </li>
+                </ul>
+            </footer>
+        </div>
+
     </main>
+
+  
+
+      
 
    
 
@@ -1227,9 +1265,32 @@
 
 
 
-    <!-- Scripts personalizados  -->
+    <!-- JQuery  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+   
+    <!-- Scripts Lotty Files  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.9/lottie.min.js"></script>
+    <script>
+        var animation = lottie.loadAnimation({
+            container: document.getElementById('lottie-container'), 
+            renderer: 'svg', 
+            loop: true, 
+            autoplay: true, 
+            path: '../public/images/animaciones/laptops&coffe.json',
+            rendererSettings: {
+                preserveAspectRatio: 'xMidYMid slice', // Ajuste de aspecto
+                progressiveLoad: true // Carga progresiva
+            },
+            width: 100, // Ancho deseado del lienzo SVG
+            height: 100 // Alto deseado del lienzo SVG
+        });
+    </script>
 
     <script src="public/js/index.js"></script>
+
+    <script>
+    
+    </script>
      
     
 
