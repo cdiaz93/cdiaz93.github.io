@@ -27,8 +27,12 @@
 /* Estilos para pantallas extra pequeños (XM) */
 @media (max-width: 575px) {
     .title{ font-size:calc(2.5rem + 0.5vw) !important }
-    #typed-container-1 { font-size: calc(0.9rem + 0.5vw) !important }
+
+    #typed-container-1,
+    .typed-cursor { font-size: calc(0.9rem + 0.5vw) !important }
+
     .btn-style1{ font-size: 12px !important }
+
     p, ul {
         color: black;
         font-size: calc(0.7rem + 0.5vh) !important;
@@ -38,8 +42,12 @@
 /* Estilos para pantallas pequeños (SM) */
 @media (min-width: 576px) {
     .title{ font-size:calc(2.5rem + 0.5vw) !important }
-    #typed-container-1{font-size: calc(0.9rem + 0.5vw) !important }
+
+    #typed-container-1,
+    .typed-cursor {font-size: calc(0.9rem + 0.5vw) !important }
+
     .btn-style1{ font-size: 12px !important }
+
     p, ul {
         color: black;
         font-size: calc(0.7rem + 0.5vh) !important;
@@ -49,8 +57,12 @@
 /* Estilos para pantallas medianos (MD) */
 @media (min-width: 768px) {
     .title{ font-size: calc(3.5rem + 0.5vw) !important }
-    #typed-container-1 { font-size: calc(1.3rem + 0.5vw) !important }
+
+    #typed-container-1, 
+    .typed-cursor { font-size: calc(1.3rem + 0.5vw) !important }
+
     .btn-style1{ font-size: 16px !important }
+
     p, ul {
         color: black;
         font-size: calc(1rem + 0.5vh) !important;
@@ -61,8 +73,12 @@
 /* Estilos para pantallas grandes (LG) */
 @media (min-width: 992px) {
     .title{ font-size: calc(4rem + 0.5vw) !important }
-    #typed-container-1{ font-size: calc(1.4rem + 0.5vw) !important }
+
+    #typed-container-1, 
+    .typed-cursor { font-size: calc(1.4rem + 0.5vw) !important }
+
     .btn-style1{ font-size: 16px !important }
+
     p, ul {
         color: black;
         font-size: calc(1.1rem + 0.5vh) !important;
@@ -72,8 +88,12 @@
 /* Estilos para pantallas extra grandes (XL) */
 @media (min-width: 1200px) {
     .title{ font-size: calc(4.3rem + 0.5vw) !important }
-    #typed-container-1{ font-size: calc(1.3rem + 0.5vw) !important }
+
+    #typed-container-1,
+    .typed-cursor { font-size: calc(1.3rem + 0.5vw) !important }
+
     .btn-style1{ font-size: 16px !important }
+
     p, ul {
         color: black;
         font-size: calc(1.1rem + 0.5vh) !important;
@@ -83,8 +103,12 @@
 /* Estilos para pantallas extra extra grandes (XXL) */
 @media (min-width: 1400px) {
     .title{ font-size: calc(5rem + 0.5vw) !important }
-    #typed-container-1{ font-size: calc(1.5rem + 0.5vw) !important }
+
+    #typed-container-1, 
+    .typed-cursor { font-size: calc(1.5rem + 0.5vw) !important }
+
     .btn-style1{ font-size: 16px !important }
+    
     p, ul {
         color: black;
         font-size: calc(1.1rem + 0.5vh) !important;
@@ -128,7 +152,6 @@ body{
     width: 100%;
     height: 100%;
     z-index: 9999;
-    /* background: url('images/pageLoader.gif') 50% 50% no-repeat rgb(249,249,249); */
     background:  rgb(0, 0, 0);
     opacity: 1;
 }
@@ -146,7 +169,6 @@ body{
     width: 300px; 
     height: 300px; 
 }
-
 
 #section-presentacion{
     min-height: 100%;
@@ -172,7 +194,6 @@ body{
 }
 
 
-
 .svg-image {
     width: 70px;
     height: auto;
@@ -195,7 +216,6 @@ body{
     box-shadow: 0 .2rem .3rem rgba(0,0,0,.5)!important
 }
 
-
 .btn-close{
     font-size: 25px !important;
 }
@@ -211,30 +231,25 @@ body{
 }
 
 .svg-container {
-    width: 100px; /* Ajusta el ancho según sea necesario */
-    height: 100px; /* Ajusta la altura según sea necesario */
+    width: 100px; 
+    height: 100px;
 }
-
 
 .background-image::before {
     content: ''; /* Obligatorio para que el pseudo-elemento sea visible */
-    position: absolute; /* Permite posicionar el pseudo-elemento sobre la imagen de fondo */
-    top: 0; /* Coloca el pseudo-elemento en la parte superior de la imagen de fondo */
-    left: 0; /* Coloca el pseudo-elemento en la parte izquierda de la imagen de fondo */
-    width: 100%; /* Ajusta el ancho del pseudo-elemento al 100% del contenedor */
-    height: 100%; /* Ajusta la altura del pseudo-elemento al 100% del contenedor */
-    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente (en este caso, negro con una opacidad del 50%) */
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0, 0, 0, 0.5); /* Color de fondo semi-transparente */
 }
-
-
 
 .title{
     font-family: 'Grotesk';
     color: white;
     font-weight: 800;
 }
-
-
 
 #typed-container-1,
 #typed-container-2,
