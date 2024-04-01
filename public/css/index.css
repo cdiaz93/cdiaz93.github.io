@@ -115,6 +115,13 @@
     }
 }
 
+@media (max-width: 767px) {
+    .no-sm-bottom {
+      position: static !important;
+      bottom: auto !important;
+    }
+}
+
 
   
 
