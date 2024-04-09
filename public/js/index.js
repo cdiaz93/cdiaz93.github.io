@@ -3,12 +3,13 @@
 
 
 // new WOW().init();
+var typed;
 
 $(window).load(function() {
     $(".loader").fadeOut("slow");
     $(".titulo_nombre").addClass(" animate__animated animate__bounceInDown animate__delay-1s");
 
-    const typed = new Typed('#typed-container-1', {
+    typed = new Typed('#typed-container-1', {
         strings: parrafoCompleto,
         typeSpeed: 30,
         backSpeed: 1,
@@ -20,8 +21,8 @@ $(window).load(function() {
         } 
     });
     
-    
 });
+
 
 
 
@@ -155,28 +156,29 @@ function animacionesPagina() {
 
     // 1. Desaparece el boton de ver portafoilio y realiza animacion de salida
     presentacion = document.getElementById("typed-container-1");
+    presentacionDiv = document.getElementById("div-typed-container");
     btnPortafolio = document.getElementById("ver_portafolio");
 
  
-    
+    // NOTA: Provoca une fecto visual en la parte final de la pagina no deseada, se elimino la animacion 
     setTimeout(function() {
         btnPortafolio.disabled = true;
         btnPortafolio.className += (" animate__animated animate__bounceOut");
-
         if(verPortafolioClicked){
-            presentacion.classList.add("animate__animated", "animate__bounceOut");
+            // presentacionDiv.classList.add("animate__animated", "animate__bounceOut");
             cursor = document.querySelectorAll('.typed-cursor');
             cursor.forEach(function(cur) { cur.remove();});
         }
     }, 0);
+    // ----------------------------------------------------------------------------------------------------
 
     // 2. Hace visible y realiza animacion de entrada para los botones de network_options (Github, CV)
     setTimeout(function() {
         if(verPortafolioClicked){
-            presentacion.classList.add("d-none");
+            presentacionDiv.classList.add("d-none");
             presentacion.innerHTML  = parrafoCompleto;
-            presentacion.classList.remove("animate__animated", "animate__bounceOut", "d-none");
-            presentacion.classList.add("animate__animated", "animate__bounceIn");
+            presentacionDiv.classList.remove("animate__animated", "animate__bounceOut", "d-none");
+            presentacionDiv.classList.add("animate__animated", "animate__bounceIn");
         }
       
         netwok = document.getElementById("network_options");
@@ -193,12 +195,6 @@ function animacionesPagina() {
         dowmArrow = document.getElementById("down_arrow");
         dowmArrow.classList.remove('d-none');
 
-        // bienvenido = document.getElementById("title_welcome");
-        // bienvenido.classList.remove('d-none');
-
-        // document.body.classList.remove("h-overflow");
-
-
         // Verificar si el elemento habilidades es visible en la pantalla
         var habilidades = document.querySelector('#section-habilidades');
         var rect = habilidades.getBoundingClientRect();
@@ -208,7 +204,6 @@ function animacionesPagina() {
             new WOW().init(); // Iniciar la animación con Wow.js
         }
  
-
         // Hace visible la seccion de habilidades, portafolio y footer
         section = document.getElementById("contenido_portafolio");
         section.classList.remove('d-none');
@@ -242,7 +237,7 @@ function animacionesPagina() {
         setTimeout(function() {
             
 
-            btnPortafolio.className += (" d-none");
+            // btnPortafolio.className += (" d-none");
             section.scrollIntoView({ behavior: "auto", block: "start" });
             
             // animacion para el contenedor del portafolio 

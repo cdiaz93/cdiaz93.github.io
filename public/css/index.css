@@ -3,23 +3,28 @@
 @font-face {
     font-family: 'Ruqaa';
     src: url('public/fonts/ruqaa/ArefRuqaaInk-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Gasoek';
     src: url('../fonts/GasoekOneLatin/GasoekOne-Regular.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'Felidae';
     src: url('../fonts/Felidae/Felidae.ttf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Nodles';
     src: url('../fonts/Nodles/Super-Noodles.otf') format('truetype');
+    font-display: swap;
 }
 @font-face {
     font-family: 'Grotesk';
     src: url('../fonts/Grotesk/Ridley Grotesk Regular.otf') format('truetype');
+    font-display: swap;
 }
 
 
@@ -409,6 +414,11 @@ body{
         box-shadow: 0 0 3px rgba(0,0,0,0.5);
     }
 
+    .border-white:hover{
+        border-color: white !important;
+    
+    }
+
     /* Estilo personalizado para la animación (hacer clic al boton) */
     .fade-in {
         animation: fadeIn 0.5s ease-in-out forwards;
@@ -430,7 +440,7 @@ body{
 .btn-style2{
     border-radius: 20px !important;
     box-shadow: 0 0 3px rgba(0,0,0,0.5);
-    font-size: 0.8em;
+    /* font-size: 0.8em; */
 }
 
 .btn-circle.btn-xl {
@@ -565,3 +575,4 @@ body{
         box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.5);
     }
 /* -------------------------------------------------------------  */
+
