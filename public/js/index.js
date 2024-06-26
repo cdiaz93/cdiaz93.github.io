@@ -51,16 +51,16 @@ var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
 // Texto que se usara con typedJS
 
 
-var parrafo1= [
-    "Desarrollador web, con experiencia en la creación de interfaces digitales atractivas y funcionales."
-];
-var parrafo2= [
-    "He contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
-];
+// var parrafo1= [
+//     "Desarrollador web, con experiencia en la creación de interfaces digitales atractivas y funcionales."
+// ];
+// var parrafo2= [
+//     "He contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
+// ];
 
 var parrafoCompleto =[
     "Desarrollador web, con experiencia en la creación de interfaces digitales atractivas y funcionales. <br><br>"+
-    "He contribuido al desarrollo de sitios web corporativos y aplicativos web de diversa índole."
+    "He participado en el desarrollo de sitios web corporativos y aplicativos web de diversa índole."
 ];
 
 var habilidades =[
