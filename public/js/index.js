@@ -283,13 +283,13 @@ function cambiarVersion(version){
         for (var i = 0; i < elementos.length; i++) {
             elementos[i].textContent = "Versión Original";
         }
-        imagen.src = "public/images/pagina_competa/chorrerasV1_fullscrren.png";
+        imagen.src = "public/images/pagina_competa/chorrerasV1_fullscrren.webp";
 
     }else if(version ==2){
         for (var i = 0; i < elementos.length; i++) {
             elementos[i].textContent = "Versión Modificada";
         }
-        imagen.src = "public/images/pagina_competa/chorrerasV2_fullscrren.png";
+        imagen.src = "public/images/pagina_competa/chorrerasV2_fullscrren.webp";
     }
 }
 // -------------------------------------------------------------------------------------
